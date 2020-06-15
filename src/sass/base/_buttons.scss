@@ -1,0 +1,126 @@
+.a-button {
+    margin-left: 8px;
+    &.-right {
+        position: absolute;
+        right: 0%;
+    }
+    @include mediaQueriesMd {
+        margin-left: $spaceXs;
+    }
+    @include mediaQueriesXs {
+        margin-left: 8px;
+    }
+}
+
+.-btnMonlogo {
+    margin-left: 8px;
+    padding: 4px 20px;
+    border: 2px solid $color-lightin;
+    border-radius: 6px;
+    font-size: $fontS2;
+    font-weight: 600;
+    color: $color-lightin;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-lightin;
+    }
+}
+
+.-outlinePrimary {
+    padding: 4px 30px;
+    border: 2px solid $color-primary;
+    border-radius: 6px;
+    font-weight: 600;
+    color: $color-primary;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-lightin;
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-secondary;
+    }
+    /* @include mediaQueriesMd {
+        padding: 3px 10px;
+        &:active, &:focus {
+            padding: 5px 10px;
+        }
+    } */
+}
+
+.-outlineSecondary {
+    @extend .-outlinePrimary;
+    font-size: $fontS2 + 3;
+    font-weight: 600;
+    padding: 6px $spaceRg;
+}
+
+.-wierdPrimary {
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    background: linear-gradient(to left, $color-primary 0%, $color-secondary 100%);
+    color: $color-lightin;
+    &:hover {
+        padding: 6px 28px;
+        background-image: none;
+        background-color: transparent;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right.svg');
+        }
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-secondary;
+        background: linear-gradient(to left, $color-primary 0%, $color-secondary 100%);
+        color: $color-lightin;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right_white.svg');
+        }
+    }
+}
+
+/* .-wierdSecondary {
+    @extend .-wierdPrimary;
+    background: linear-gradient(to left, $color-secondary 0%, $color-grey 100%);
+} */
+
+.-fillPrimary {
+    @extend .-outlinePrimary;
+    background-color: $color-primary;
+    color: $color-lightin;
+    &:hover {
+        background-color: transparent;
+        color: $color-primary;
+    }
+    &:active, &:focus {
+        background-color: $color-primary;
+        color: $color-lightin;
+    }
+}
+
+.-fillSecondary {
+    @extend .-fillPrimary;
+    padding: 6px 20px;
+    background-color: $color-secondary;
+    border: 2px solid $color-secondary;
+    color: $color-lightin;
+    &:hover {
+        background-color: transparent;
+        color: $color-secondary;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right_secondary.svg');
+        }
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-calm;
+        background-color: $color-secondary;
+        color: $color-lightin;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right_white.svg');
+        }
+    }
+    // @include mediaQueriesXs {
+    //     padding: 6px 20px;
+    // }
+}

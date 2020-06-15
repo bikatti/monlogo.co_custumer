@@ -1,0 +1,25 @@
+.o-footer {
+    background-color: $color-primary;
+}
+
+
+.o-footerFirmDev {
+    p {
+        color: $color-lightin;
+    }
+    &.-index {
+        @include footerFirmFunction($blueBg: true);
+        .-btnMonlogo {
+            border-color: $color-lightin;
+            color: $color-lightin;
+        }
+        .-btnMonlogo:hover, .-btnMonlogo:active {
+            color: $color-lightin;
+        }
+    }
+    @include mediaQueriesXs {
+        p {
+            font-size: $fontS1;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+// .-index
+.o-hero {
+    position: relative;
+    padding-top: $spaceMd;
+    padding-bottom: $spaceMd;
+    @include mediaQueriesMd {
+        padding-top: $spaceRg;
+        padding-bottom: $spaceRg;
+    }
+}
