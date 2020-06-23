@@ -1,33 +1,35 @@
 // colors
 $color-primary: #2e279d;
 $color-secondary: #226ef2;
-$color-alert: #efb1ff;
-$color-calm: #ffe2ff;
+$color-alert: #46b3e6;
+$color-calm: #ceddef;
+
+$bg: #eff4f9;
 
 // colors grey
 $color-lightin: #FEFEFE;
-$color-lightgrey: #EEEEEE;
-$color-grey: #C9CED9;
-$color-darkgrey: #878D9B;
-$color-darkengrey: #393E46;
+$color-lightgrey: #dddce0;
+$color-grey: #bab7c1;
+$color-darkgrey: #76737b;
+$color-darkengrey: #39383b;
 
 // fonts
-$font1: 'Mukta', sans-serif;
-$font2: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font1: 'Hind', sans-serif;
+$font2: 'Raleway', Arial, sans-serif;
 
 // font-size
 $fontS1: 12px;
 $fontS2: 14px;
-$fontS3: 22px;
-$fontS4: 29px;
+$fontS3: 18px;
+$fontS4: 30px;
 $fontS5: 45px;
 
 // font-size Mobile
-$fontSM1: 14px;
-$fontSM2: 16px;
-$fontSM3: 28px;
-$fontSM4: 40px;
-$fontSM5: 18px;
+$fontSM1: 11px;
+$fontSM2: 13px;
+$fontSM3: 16px;
+$fontSM4: 18px;
+$fontSM5: 30px;
 
 // font-size 0
 $font01: 16px;
@@ -36,7 +38,6 @@ $font03: 34px;
 
 // Shadow
 $shadow1: 0 3px 6px 0 $color-grey;
-// $shadow2: -10px 0px 20px 0 rgba($color-primary, .6);
 
 // Border
 $borderBottom: 1px solid $color-lightgrey;
@@ -51,8 +52,8 @@ $breakXxs: 375px;
 $break0: 320px;
 
 // Spaces
-$spaceBg: 70px;
+$spaceBg: 80px;
 $spaceMd: 50px;
 $spaceRg: 35px;
-$spaceSm: 25px;
-$spaceXs: 15px;
+$spaceSm: 15px;
+$spaceXs: 8px;

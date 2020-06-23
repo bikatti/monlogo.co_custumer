@@ -1,10 +1,13 @@
 // Navegación y distribución de la página
 .-ContainerUniversal {
-    max-width: 85%;
+    max-width: 78%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px 5px;
     box-sizing: border-box;
+    &.-bigger {
+        max-width: 95%;
+    }
     @include mediaQueriesLg {
         max-width: 89.66%;
     }
@@ -83,6 +86,13 @@ section .a-paddingMd {
     }
 }
 
+.-padBgTop {
+    padding-top: 80px;
+    @include mediaQueriesMd {
+        padding-top: $spaceMd;
+    }
+}
+
 .-containerText {
     margin-bottom: $spaceSm;
     margin-left: auto;
@@ -90,5 +100,28 @@ section .a-paddingMd {
     max-width: 68.66%;
     @include mediaQueriesMd {
         max-width: 100%;
+    }
+}
+
+// Display
+.-dInline {
+    display: inline;
+}
+
+.-alignItemsLeft {
+    align-items: left !important;
+}
+
+// border y resources
+.-borderBottom {
+    opacity: .3;
+    border-bottom: 2px solid $color-secondary;
+}
+
+// bg colors
+.-bg {
+    background-color: $bg;
+    &Wow {
+        background-color: $color-secondary;
     }
 }

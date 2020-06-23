@@ -1,0 +1,168 @@
+.o-problemStory {
+    position: relative;
+    box-sizing: border-box;
+    &.-course {
+        z-index: 5;
+    }
+    @include mediaQueriesMd {
+        &.-course {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.o-problemStory__content {
+    &Right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 320px;
+        grid-gap: 0 $spaceMd;
+        grid-template-areas: "problemImg problemContent";
+    }
+    &Left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 320px;
+        grid-gap: 0 $spaceMd;
+        grid-template-areas: "explainContent explainImg";
+    }
+    @include mediaQueriesLg {
+        &Right {
+            grid-template-columns: 35% 1fr;
+        }
+        &Left {
+            grid-template-columns: 1fr 35%;
+        }
+    }
+    @include mediaQueriesMd {
+        &Right {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            grid-gap: $spaceMd 0;
+            grid-template-areas: "problemContent" "problemImg";
+        }
+        &Left {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            grid-gap: $spaceMd 0;
+            grid-template-areas: "explainContent" "explainImg";
+        }
+    }
+}
+
+.m-problemImg {
+    grid-area: problemImg;
+    margin: auto;
+    margin-left: 0;
+    width: 91%;
+    img {
+        width: 100%;
+    }
+    @include mediaQueriesLg {
+        width: 100%;
+    }
+    @include mediaQueriesMd {
+        width: 88%;
+        margin: auto;
+    }
+    @include mediaQueriesSm {
+        width: 100%;
+    }
+}
+
+.m-problemContent {
+    grid-area: problemContent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a-problemIcon, .a-explainIcon {
+    width: 60px;
+    @include mediaQueriesSm {
+        margin-bottom: 5px;
+    }
+}
+
+.m-explainImg {
+    grid-area: explainImg;
+    margin: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 88%;
+    img {
+        width: 100%;
+    }
+    @include mediaQueriesLg {
+        width: 100%;
+    }
+    @include mediaQueriesMd {
+        width: 88%;
+        margin: auto;
+    }
+    @include mediaQueriesSm {
+        width: 100%;
+    }
+}
+
+.m-explainContent {
+    grid-area: explainContent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a-problemTitle, .a-explainTitle {
+    color: $color-primary;
+}
+
+.a-problemSubtitle, .a-explainSubtitle {
+    display: flex;
+    align-items: center;
+    &__text {
+        font-style: italic;
+    }
+    &__line {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 70px;
+        height: 2px;
+        background-color: $color-primary;
+    }
+    @include mediaQueriesSm {
+        padding-top: 5px;
+    }
+    @include mediaQueriesXs {
+        &__line {
+            margin-top: 3px;
+            margin-left: 0;
+        }
+        &__line.-right {
+            margin-left: 10px;
+        }
+    }
+}
+
+.a-problemContent, .a-explainContent {
+    position: relative;
+    padding-top: $spaceXs;
+    padding-bottom: $spaceSm;
+    .-top {
+        margin-top: $spaceXs;
+    }
+    p {
+        padding-bottom: $spaceXs;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    @include mediaQueriesLg {
+        padding-top: $spaceSm;
+    }
+}
+
+.-borderRadius {
+    border-radius: $spaceXs;
+    box-shadow: 5px 8px 16px .5px $color-grey;
+}

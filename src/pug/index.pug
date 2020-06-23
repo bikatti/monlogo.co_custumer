@@ -5,8 +5,28 @@ html(lang="es")
  include base/_head.pug
   meta(name="title", content=titles[0])
   meta(name="description", content="Nueva página")
-  title Nueva página
+  title #{titles[0]}
  body.o-colorIndex
+  // header
+  include base/_header.pug
+
+  // hero
+  include components/index/_hero.pug
+
+  // cards
+  include components/index/_cards.pug
+
+  // About us
+  include components/index/_about_us.pug
+
+  // witness
+  include components/index/_witness.pug
+
+  // work ft us
+  include components/index/_work_w_us.pug
+
+  // contact and faq
+  include components/_contact_faq.pug
 
   // footer
   include base/_footer.pug

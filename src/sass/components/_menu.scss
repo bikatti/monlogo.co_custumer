@@ -1,0 +1,187 @@
+// Menus, y navegación
+.o-nav {
+    position: relative;
+    z-index: 2;
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+}
+
+.o-navFixedContainer {
+    width: 100%;
+    height: 80px;
+    transition: height 0.25s ease-in-out 0s;
+    @include mediaQueriesMd {
+        height: 50px;
+    }
+}
+
+/* .a-boxShadowMenu {
+    box-shadow: 0 0 10px 1px rgba($color-primary, $alpha: .15);
+} */
+
+.o-nav__content {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 19% 1fr 10%;
+    grid-gap: 0 10px;
+    grid-template-areas: "brand contentItem buttonCTA";
+    padding: 4px 7% 0;
+    background-color: $color-lightin;
+    @include mediaQueriesLg {
+        padding: 8px 5% 5px;
+        grid-gap: 0 $spaceXs;
+    }
+    @include mediaQueriesMd {
+        padding: 8px 15px 5px;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "burguer brand buttonCTA";
+    }
+}
+
+.a-brand {
+    display: flex;
+    align-items: center;
+    &__Img {
+        grid-area: brand;
+        width: 100%;
+    }
+    @include mediaQueriesLg {
+        &__Img {
+            width: 110%;
+        }
+    }
+    @include mediaQueriesMd {
+        justify-content: center;
+        padding-left: 8px;
+        box-sizing: border-box;
+        &__Img {
+            width: 150px;
+        }
+    }
+}
+
+.a-brandMobile {
+    padding-top: $spaceXs;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    box-sizing: content-box;
+    .a-brandMobile__Img {
+        width: 150px;
+    }
+    @include mediaQueriesMd {
+        display: block;
+    }
+}
+
+.m-itemContent {
+    &.-isActive {
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .a-burguerOut {
+        display: none;
+    }
+    .a-brand {
+        display: none;
+    }
+    .-outlinePrimary {
+        display: none;
+    }
+    @include mediaQueriesMd {
+        position: fixed;
+        top: -200vh;
+        background-color: $color-lightin;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        transition: .3s;
+        .a-brand {
+            display: block;
+        }
+        .a-burguerOut {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 25px;
+        }
+        .a-button .-outlinePrimary {
+            display: flex;
+            // font-size: $fontS3;
+            // padding: 8px 60px;
+        }
+    }
+}
+
+.m-itemContent__list {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    top: 10px;
+    grid-area: contentItem;
+    li {
+        padding-top: 20px;
+        padding-right: 25px;
+    }
+    @include mediaQueriesMd {
+        padding-left: 0;
+        margin-top: $spaceSm;
+        margin-bottom: $spaceMd;
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+        li {
+            padding-left: 10px;
+            padding-right: 0;
+        }
+    }
+}
+
+.m-CallToAction {
+    grid-area: buttonCTA;
+    display: flex;
+    align-items: center;
+    .a-iconFund {
+        display: none;
+    }
+    @include mediaQueriesLg {
+        justify-content: flex-end;
+    }
+    @include mediaQueriesMd {
+        .-outlinePrimary {
+            display: none;
+        }
+        .a-iconFund {
+            display: inline;
+            padding-top: 5px;
+            &__img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+.a-burguer {
+    grid-area: burguer;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    &__menu {
+        width: 18px;
+        color: $color-primary;
+    }
+     @include mediaQueriesMd {
+        display: flex;
+    }
+}
