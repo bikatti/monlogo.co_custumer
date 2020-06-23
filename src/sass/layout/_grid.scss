@@ -1,0 +1,94 @@
+// Navegación y distribución de la página
+.-ContainerUniversal {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 5px;
+    box-sizing: border-box;
+    @include mediaQueriesLg {
+        max-width: 89.66%;
+    }
+    @include mediaQueriesSm {
+        padding: 10px;
+    }
+    @include mediaQueries0 {
+        padding: 0;
+        max-width: 86%;
+    }
+}
+
+.-ContainerBlog {
+    @extend .-ContainerUniversal;
+    max-width: 60%;
+    @include mediaQueriesMd {
+        max-width: 89.66%;
+    }
+    @include mediaQueries0 {
+        padding: 0;
+        max-width: 86%;
+    }
+}
+
+a.-padModifier {
+    padding: 6px 20px;
+    @include mediaQueriesLg {
+        padding: 6px 14px;
+    }
+    @include mediaQueries0 {
+        padding: 6px 6px;
+    }
+}
+
+section .a-noMargin {
+    margin: 0;
+}
+
+section .a-noPadding {
+    padding: 0;
+}
+
+section .a-paddingMd {
+    padding-top: $spaceXs;
+    padding-bottom: $spaceSm;
+}
+
+.-padCoolTopBottom {
+    padding-top: $spaceBg + 20px;
+    padding-bottom: $spaceBg + 20px;
+    @include mediaQueriesMd {
+        padding-top: $spaceMd;
+        padding-bottom: $spaceMd;
+    }
+}
+
+.-padMdTopBottom {
+    padding-top: $spaceMd;
+    padding-bottom: $spaceMd;
+}
+
+.-padRgTopBottom {
+    padding-top: $spaceRg;
+    padding-bottom: $spaceRg;
+}
+
+.-padSmTopBottom {
+    padding-top: $spaceSm;
+    padding-bottom: $spaceSm;
+}
+
+.-padBgBottom {
+    padding-bottom: 80px;
+    @include mediaQueriesMd {
+        padding-bottom: $spaceMd;
+    }
+}
+
+.-containerText {
+    margin-bottom: $spaceSm;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 68.66%;
+    @include mediaQueriesMd {
+        max-width: 100%;
+    }
+}

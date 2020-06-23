@@ -1,0 +1,111 @@
+h1, h2, h3, p, small, i, span, ol, li, ul {
+    font-family: $font2;
+    color: $color-darkgrey;
+    line-height: 1.3;
+}
+
+// Titles
+h1 {
+    font-family: $font1;
+    font-size: $fontS5;
+    font-weight: bold;
+    @include mediaQueriesMd {
+        font-size: $fontSM4;
+    }
+    @include mediaQueries0 {
+        font-size: $font03;
+    }
+}
+
+h2 {
+    font-family: $font1;
+    font-weight: bold;
+    font-size: $fontS4;
+    @include mediaQueriesMd {
+        font-size: $fontSM3;
+    }
+    @include mediaQueries0 {
+        font-size: $font02;
+    }
+}
+
+h3 {
+    font-family: $font1;
+    font-weight: 500;
+    font-size: $fontS3;
+    @include mediaQueriesLg {
+        font-size: $fontSM5;
+    }
+    @include mediaQueries0 {
+        font-size: $font01;
+    }
+}
+
+// Pragraph
+p, i, ol, li {
+    font-size: $fontS2;
+    font-weight: normal;
+    @include mediaQueriesLg {
+        line-height: 1.6;
+    }
+    @include mediaQueriesMd {
+        line-height: 1.4;
+        font-size: $fontSM2;
+    }
+}
+
+small, span {
+    font-size: $fontS1;
+}
+
+.-uppercase {
+    text-transform: uppercase;
+}
+
+// List
+ol {
+    padding: 0;
+}
+
+.-counterContainer ol {
+    counter-reset: myCounter;
+}
+
+.m-listContent {
+    position: relative;
+    // margin-left: $spaceXs;
+    &.-arrow li {
+        list-style: none;
+        margin-left: $spaceSm;
+        &::before {
+            display: block;
+            width: 18px;
+            position: absolute;
+            left: 0;
+            margin: 2px 5px 0;
+            content: url('../img/icons/arrow_right@0.5.svg');
+        }
+    }
+    &.-counter li {
+        list-style: none;
+        margin-left: $spaceSm;
+        &::before {
+            width: 22px;
+            height: 22px;
+            // margin: 2px 10px;
+            display: block;
+            position: absolute;
+            left: -5px;
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            border-radius: 50%;
+            font-size: $fontS1;
+            color: $color-lightin;
+            font-weight: 600;
+            line-height: 21px;
+            text-align: center;
+            transition: all .2s;
+            background-color: $color-secondary;
+        }
+    }
+}
