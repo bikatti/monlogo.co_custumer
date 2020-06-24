@@ -1,39 +1,7 @@
 .o-card {
     position: relative;
-    &.-index {
-        padding-top: 0;
-    }
-    &.-course {
-        z-index: 5;
-    }
 }
 
-.m-cardTitle {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    .a-problemSubtitle {
-        padding-top: 6px;
-        width: 66%;
-    }
-    @include mediaQueriesLg {
-        .a-problemSubtitle {
-            width: 70%;
-        }
-    }
-    @include mediaQueriesMd {
-        width: 100%;
-        .a-problemSubtitle__text {
-            font-size: $fontS2;
-        }
-        .a-problemSubtitle {
-            width: 100%;
-        }
-    }
-}
 
 .m-cardBox {
     display: flex;
@@ -63,11 +31,12 @@
 }
 
 .m-box {
-    box-shadow: $shadow1;
-    width: 300px;
+    box-shadow: 6px 6px $color-alert;
+    border: 1px solid $color-primary;
+    width: 284px;
+    height: 352px;
     margin-left: $spaceSm;
     margin-right: $spaceSm;
-    padding: 20px;
     text-align: left;
     opacity: 0;
     display: inline-block;
@@ -78,7 +47,7 @@
     overflow: hidden;
     top: 60px;
     z-index: 10;
-    background-color: $color-calm;
+    background-color: $color-lightin;
     background-repeat: no-repeat;
     animation-name: Upbox;
     animation-duration: 0.6s;
@@ -88,50 +57,35 @@
     animation-fill-mode: forwards;
     animation-play-state: running;
     transition: all 0.3s cubic-bezier(0.15, 1, 0.33, 1) 0s;
-    &.-course {
-        background-color: $color-lightin;
-        padding: 0;
-        display: flex;
-        margin-left: $spaceXs;
-        margin-right: $spaceXs;
-        flex-direction: column;
-        width: 270px;
-        border-radius: 8px;
-    }
     &:hover {
-        transform: translateY(-2px);
+        // transform: translateY(-2px);
         text-decoration: none;
-        color: $color-primary;
+        box-shadow: 5px 5px $color-alert;
+        top: 2px;
+        left: 2px;
+    }
+    &:active {
+        box-shadow: 0px 0px $color-alert;
+        top: 5px;
+        left: 5px;
     }
     &__container {
         display: flex;
         flex-direction: column;
-        padding-top: $spaceXs;
-        padding-bottom: $spaceXs;
-        align-items: center;
-        &.-course {
-            align-items: start;
-            padding: 0  $spaceXs $spaceXs;
-        }
+        padding: 0 $spaceSm $spaceSm;
+        align-items: flex-start;
     }
     &__title {
+        font-size: $font02;
+        font-weight: 600;
+        color: $color-primary;
         padding-bottom: $spaceXs;
-        text-align: center;
-        &.-course {
-            text-align: left;
-            padding-bottom: 8px;
-        }
     }
     &__img {
         height: 100px;
         width: 100px;
         box-sizing: content-box;
         padding-bottom: $spaceXs;
-    }
-    @include mediaQueriesXl {
-        &.-course {
-            margin-top: $spaceRg;
-        }
     }
     @include mediaQueriesLg {
         margin-left: $spaceXs;
@@ -142,15 +96,6 @@
         &:last-child {
             margin-right: 0;
         }
-        &.-course {
-            width: 320px;
-        }
-        &.-course:first-child {
-            margin-left: $spaceXs;
-        }
-        &.-course:last-child {
-            margin-right: $spaceXs;
-        }
     }
     @include mediaQueriesSm {
         margin-bottom: $spaceRg;
@@ -160,16 +105,6 @@
         &:last-child {
             margin-right: $spaceXs;
             margin-bottom: 0;
-        }
-        &.-course {
-            margin: 0;
-            margin-bottom: $spaceMd;
-            &:first-child {
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
         }
         &__title {
             font-size: $font02;
@@ -182,19 +117,13 @@
     }
     @include mediaQueries0 {
         width: 260px;
-        &.-course {
-            width: 270px;
-        }
     }
 }
 
 .m-box__containerImg {
     width: 100%;
-    height: 150px;
-    margin-bottom: $spaceXs;
-    .-course & {
-        height: auto;
-    }
+    height: 160px;
+    margin-bottom: 25px;
 }
 .a-course__img {
     width: 100%;
@@ -202,48 +131,16 @@
     object-fit: cover;
 }
 
-.m-box__profileImg {
-    width: $spaceSm;
-    @include mediaQueriesSm {
-        width: $spaceRg;
-    }
-    @include mediaQueries0 {
-        width: $spaceSm;
-    }
-}
-
-.a-course__profile {
-    width: 100%;
-    border-radius: 50%;
-    
-}
-
-.m-box__icon {
-    display: flex;
-    margin-left: 5px;
-}
-.a-course__icon {
-    width: 15px;
-    margin-right: 5px;
-}
-
-
-.m-box__details {
-    display: flex;
-    margin-top: $spaceRg;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: space-between;
-}
 
 .m-box__profile {
     display: flex;
     flex-direction: row;
-    // margin-top: $spaceXs;
+    .a-arrowWierd {
+        margin-right: $spaceXs;
+        margin-bottom: 3px;
+    }
 }
-.m-box__profileImg {
-    margin-right: 5px;
-}
+
 
 .m-box__stage {
     border-radius: $spaceSm;

@@ -1,7 +1,7 @@
 // .-index
 .o-hero {
     position: relative;
-    padding-top: $spaceRg;
+    padding-top: 38px;
     padding-bottom: $spaceRg;
     @include mediaQueriesMd {
         padding-top: $spaceSm;
@@ -16,12 +16,10 @@
     @include mediaQueriesMd {
         grid-template-columns: 86%;
         grid-template-rows: 1fr auto;
-        grid-gap: $spaceBg 0;
         grid-template-areas: "textHero" "imgHero";
         justify-content: center;
     }
     @include mediaQueriesXs {
-        grid-gap: $spaceXs 0;
         grid-template-columns: 100%;
     }
 }
@@ -30,7 +28,6 @@
 
 .m-heroContent__text {
     grid-area: textHero;
-    padding-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,16 +37,12 @@
     }
 }
 .a-heroContent__title {
-    max-width: 90%;
     padding-bottom: $spaceXs;
     h1 {
         color: $color-primary;
     }
     h1.-alert {
         color: $color-lightin;
-    }
-    @include mediaQueriesLg {
-        max-width: 100%;
     }
     @include mediaQueriesXs {
         h1 {
@@ -59,11 +52,10 @@
 }
 
 .a-heroContent__text {
+    max-width: 76%;
+    margin-right: auto;
+    margin-left: auto;
     line-height: 1.27;
-    padding-bottom: $spaceSm;
-    .-alert {
-        color: $color-lightgrey;
-    }
 }
 
 // .a-heroContent__button

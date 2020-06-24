@@ -6,7 +6,7 @@
     padding: 10px 10px 5px;
     box-sizing: border-box;
     &.-bigger {
-        max-width: 95%;
+        max-width: 98%;
     }
     @include mediaQueriesLg {
         max-width: 89.66%;

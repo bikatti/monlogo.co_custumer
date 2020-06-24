@@ -1,29 +1,19 @@
 .o-problemStory {
     position: relative;
     box-sizing: border-box;
-    &.-course {
-        z-index: 5;
-    }
-    @include mediaQueriesMd {
-        &.-course {
-            padding-bottom: 0;
-        }
-    }
 }
 
 .o-problemStory__content {
     &Right {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 320px;
-        grid-gap: 0 $spaceMd;
+        grid-template-columns: 56% auto;
+        grid-gap: 0 $spaceXs;
         grid-template-areas: "problemImg problemContent";
     }
     &Left {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 320px;
-        grid-gap: 0 $spaceMd;
+        grid-gap: 0 $spaceXs;
         grid-template-areas: "explainContent explainImg";
     }
     @include mediaQueriesLg {

@@ -17,10 +17,10 @@ nav.o-nav.sticky
      li: a.a-itemLink(href=linksUrl[1]+"#podcastTalk") #{titles[2]}
      li: a.a-itemLink(href=linksUrl[1]+linksInternos[0]) #{titles[3]}
      li: a.a-itemLink(href=linksExternos[0], target="_blank") #{titles[5]}
-    .a-button.a-noMargin
-     a.-outlinePrimary(href=linksUrl[1]+linksInternos[1]) #{titles[4]}
+    a.a-button.a-noMargin(href=linksUrl[1]+linksInternos[0])
+     button.a-btn.-btnPrimary(type="button") #{titles[4]}
 
    .m-CallToAction
-    .a-button
-     a.-outlinePrimary(href=linksUrl[1]+linksInternos[1]) #{titles[4]}
-    a.a-iconFund(href=linksUrl[1]+linksInternos[1]): img.a-iconFund__img(src=linksUrl[1]+"assets/img/icons/mail.svg", alt="")
+    a.a-button(href=linksUrl[1]+linksInternos[0])
+     button.a-btn.-btnPrimary(type="button") #{titles[4]}
+    a.a-iconMail(href=linksUrl[1]+linksInternos[0]): img.a-iconMail__img(src=linksUrl[1]+"assets/img/icons/mail.svg", alt="")
