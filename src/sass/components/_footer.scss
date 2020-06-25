@@ -1,35 +1,16 @@
-/* .o-fundBanner {
-    background: linear-gradient(to bottom, $color-calm 0%, $color-alert 100%);
-}
-
-.m-fundBanner__container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.m-fundBanner__explain {
-    width: 86%;
-    h3, p {
-        text-align: center;
-        // color: $color-darkengrey;
-    }
-    @include mediaQueriesLg {
-        width: 100%;
-    }
-} */
-
 .o-footer {
     background-color: $color-lightin;
 }
 
 .m-footer {
     display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr) 30%;
-    grid-template-rows: auto auto 10%;
-    grid-template-areas: "logoFooter logoFooter logoFooter logoFooter" "usFooter courFooter artiFooter subsFooter" "copyFooter copyFooter copyFooter copyFooter";
-    grid-gap: 0 $spaceXs;
-    border-bottom: 1px solid $color-alert;
+    grid-template-columns: 28% repeat(2, 1fr) 25%;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "logoFooter logoFooter logoFooter logoFooter" "usFooter courFooter artiFooter subsFooter";
+    grid-gap: 0 $spaceSm;
+    h3 {
+        padding-bottom: $spaceXs;
+    }
     @include mediaQueriesLg {
         grid-template-columns: 1fr 2fr 1fr 40%;
     }
@@ -50,9 +31,9 @@
     margin-bottom: $spaceRg;
     padding-right: $spaceXs;
     margin-right: auto;
-    margin-left: auto;
+
     img {
-        width: 350px;
+        width: 200px;
     }
     @include mediaQueriesMd {
         margin-bottom: 0;
@@ -67,6 +48,7 @@
 
 .m-footer__us {
     grid-area: usFooter;
+    padding-left: $spaceXs;
     @include mediaQueriesMd {
         display: none;
     }
@@ -162,5 +144,35 @@
         .a-thingsLeft {
             left: -80px;
         }
+    }
+}
+.a-mailChimp__form {
+    .-btnFooter {
+        padding: 5px 20px;
+        font-weight: 600;
+    }
+    display: flex;
+}
+
+.a-mailchimpGroup {
+    margin-right: $spaceXs;
+    @include mediaQueriesXxs {
+        margin-right: 8px;
+    }
+}
+.a-mailchimpMail {
+    font-size: $fontS2;
+    border-radius: 6px;
+    border: 2px solid $color-primary;
+    box-shadow: 4px 4px $color-alert;
+    padding: 5px $spaceXs;
+    &:focus {
+        outline: none;
+        border-color: $color-secondary;
+    }
+    @include mediaQueriesXs {
+        width: 190px;
+        padding-right: 5px;
+        padding-left: 8px;
     }
 }

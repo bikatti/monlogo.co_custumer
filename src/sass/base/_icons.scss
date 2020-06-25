@@ -55,14 +55,18 @@
     cursor: pointer;
 }
 
-.a-paypal {
-    width: 26px;
-    content: url('../img/icons/paypal.png');
-    // margin-top: 5px;
-    margin-right: 3px;
-}
-
 .a-arrowWierd {
     width: 40px;
     content: url('../img/icons/arrow_wierd.svg');
+}
+
+.a-circleLines {
+    content: url('../img/recursos/circle_lines.svg');
+}
+.a-squarePoints {
+    content: url('../img/recursos/points_square.svg');
+}
+
+.a-MonlogoIconWhite {
+    content: url('../img/logo/isotipo_monlogo_w.png');
 }

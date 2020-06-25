@@ -25,27 +25,17 @@
         outline: none;
     }
 }
-
 .-btnMonlogo {
-    margin-left: 8px;
-    padding: 4px 20px;
-    border: 2px solid $color-lightin;
-    border-radius: 6px;
     font-size: $fontS2;
-    font-weight: 600;
-    color: $color-lightin;
-    &:hover {
-        background-color: $color-primary;
-        color: $color-lightin;
-    }
 }
 
-.-btnPrimary {
+.-btnPrimary, .-btnFooter {
     padding: 5px 28px;
     box-shadow: 4px 4px $color-alert;
     border: 2px solid $color-primary;
     background-color: $color-lightin;
     border-radius: 6px;
+    color: $color-darkengrey;
     &:hover {
         box-shadow: 3px 3px $color-alert;
         top: 1px;

@@ -1,7 +1,6 @@
 // Links A
 a {
     color: $color-darkengrey;
-    font-weight: 600;
     text-decoration: none;
     &:hover {
         text-decoration: none;
@@ -10,6 +9,7 @@ a {
 
 .a-itemLink {
     font-size: $fontSM2;
+    font-weight: 600;
     color: $color-darkengrey;
     &:hover {
         color: rgba($color-darkengrey, $alpha: .8);

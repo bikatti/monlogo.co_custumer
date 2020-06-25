@@ -111,6 +111,13 @@ li {
         }
     }
 }
+.m-listFooter {
+    position: relative;
+    li {
+        list-style: none;
+        margin-bottom: 3px;
+    }
+}
 
 // Styles
 .-uppercase {

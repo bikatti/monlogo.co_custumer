@@ -1,6 +1,6 @@
 // Navegación y distribución de la página
 .-ContainerUniversal {
-    max-width: 78%;
+    max-width: 79%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px 5px;
@@ -59,8 +59,8 @@ section .a-paddingMd {
     padding-top: $spaceBg + 20px;
     padding-bottom: $spaceBg + 20px;
     @include mediaQueriesMd {
-        padding-top: $spaceMd;
-        padding-bottom: $spaceMd;
+        padding-top: $spaceBg;
+        padding-bottom: $spaceBg;
     }
 }
 
@@ -84,6 +84,10 @@ section .a-paddingMd {
     @include mediaQueriesMd {
         padding-bottom: $spaceMd;
     }
+}
+
+section .-padSmBottom {
+    padding-bottom: $spaceSm !important;
 }
 
 .-padBgTop {

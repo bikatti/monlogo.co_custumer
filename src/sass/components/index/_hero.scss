@@ -60,30 +60,6 @@
 
 // .a-heroContent__button
 
-
-.a-mailchimpGroup {
-    margin-right: $spaceXs;
-    @include mediaQueriesXxs {
-        margin-right: 8px;
-    }
-}
-.a-mailchimpMail {
-    border-radius: $spaceRg;
-    border: 2px solid $color-primary;
-    padding-top: 5px;
-    padding-left: $spaceXs;
-    padding-right: $spaceXs;
-    &:focus {
-        outline: none;
-        border-color: $color-secondary;
-    }
-    @include mediaQueriesXs {
-        width: 190px;
-        padding-right: 5px;
-        padding-left: 8px;
-    }
-}
-
 .m-heroContent__img {
     grid-area: imgHero;
     margin: auto;

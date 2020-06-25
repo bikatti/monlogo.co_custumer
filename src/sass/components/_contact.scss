@@ -1,0 +1,116 @@
+.o-contactAndFaq {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    @include mediaQueriesXs {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.m-contactAndFaq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1, h2, h3 {
+        color: $color-lightin;
+    }
+}
+
+.m-contactAndFaq__content {
+    max-width: 75%;
+    margin-bottom: 25px;
+    @include mediaQueriesMd {
+        max-width: 94%;
+    }
+    @include mediaQueriesXs {
+        max-width: 100%;
+    }
+}
+.a-contactAndFaq__title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: $spaceXs;
+    position: relative;
+    &::before {
+        position: absolute;
+        left: $spaceMd;
+        top: -55px;
+        width: 100px;
+        content: url('../img/recursos/work_config.svg');
+    }
+    .a-MonlogoIconWhite {
+        margin-left: $spaceXs;
+        max-width: 50px;
+        object-fit: cover;
+    }
+    @include mediaQueriesMd {
+        &::before {
+            left: $spaceXs;
+        }
+    }
+    @include mediaQueriesXs {
+        &::before {
+            width: $spaceBg;
+            left: -$spaceXs;
+        }
+    }
+}
+
+.m-contactAndFaq__button {
+    display: flex;
+    align-items: center;
+    @include mediaQueriesMd {
+        justify-content: center;
+        flex-wrap: wrap;
+        button {
+            margin-bottom: $spaceSm;
+        }
+    }
+    @include mediaQueriesXs {
+        flex-direction: column;
+        h3 {
+            padding-top: $spaceXs;
+            padding-bottom: $spaceSm;
+        }
+    }
+}
+
+.m-contactAndFaq__dec {
+    .a-squarePoints {
+        position: absolute;
+        width: 300px;
+        left: -125px;
+        top: -120px;
+    }
+    .a-squarePoints + .a-squarePoints {
+        position: absolute;
+        width: 300px;
+        right: -125px;
+        bottom: -110px;
+        left: auto;
+        top: auto;
+    }
+    @include mediaQueriesMd {
+        .a-squarePoints {
+            left: -180px;
+            top: -160px;
+        }
+        .a-squarePoints + .a-squarePoints {
+            right: -190px;
+            bottom: -160px;
+        }
+    }
+    @include mediaQueriesXs {
+        .a-squarePoints {
+            left: -250px;
+            top: -160px;
+        }
+        .a-squarePoints + .a-squarePoints {
+            right: -190px;
+            bottom: -160px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.o-workWitfUs {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.o-workWitfUs__content {
+    display: flex;
+    flex-wrap: nowrap;
+    @include mediaQueriesLg {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.m-workWitfUs__content {
+    padding-right: $spaceRg;
+    @include mediaQueriesLg {
+        padding-right: 0;
+        max-width: 89%;
+    }
+    @include mediaQueriesMd {
+        max-width: 80%
+    }
+    @include mediaQueriesXs {
+        max-width: 100%;
+    }
+}
+
+.m-workWitfUs__cards {
+    margin-top: $spaceSm;
+}

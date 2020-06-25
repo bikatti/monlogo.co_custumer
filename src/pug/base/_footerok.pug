@@ -3,12 +3,7 @@
   .m-footer__logo
    img(src=linksUrl[1]+logoResponsive[0], alt="")
   .m-footer__us
-   h3 #{titles[0]}
-   ol.m-listFooter
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[1])
-    +footerLink(linksUrl[1]+"#podcastTalk","", titles[2])
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[3])
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[4])
+   p Copyright © 2020 Prointelecto
   .m-footer__course
    h3 #{titles[3]}
    ol.m-listFooter
@@ -23,5 +18,7 @@
     +footerLink(linksUrl[1]+linksInternos[0],"", "Sobre el Ashtanga Yoga")
   .m-footer__subs
    h3 Subscríbete a nuestro newsletter
-   
-   h3 Puedes apoyarnos por:
+   +mailChimp("-footer", "", "-footer", "-btnFooter -btnMonlogo")
+
+ .a-border.-ContainerBlog
+  .-borderBottom
