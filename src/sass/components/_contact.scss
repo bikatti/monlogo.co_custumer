@@ -35,6 +35,7 @@
     margin-bottom: $spaceXs;
     position: relative;
     &::before {
+        display: none;
         position: absolute;
         left: $spaceMd;
         top: -55px;

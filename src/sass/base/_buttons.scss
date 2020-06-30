@@ -24,6 +24,9 @@
     &:focus {
         outline: none;
     }
+    @include mediaQueriesMd {
+        font-size: $fontSM2;
+    }
 }
 .-btnMonlogo {
     font-size: $fontS2;

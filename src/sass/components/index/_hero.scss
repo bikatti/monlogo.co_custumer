@@ -14,13 +14,9 @@
     grid-template-rows: auto auto;
     grid-template-areas: "textHero" "imgHero";
     @include mediaQueriesMd {
-        grid-template-columns: 86%;
         grid-template-rows: 1fr auto;
         grid-template-areas: "textHero" "imgHero";
         justify-content: center;
-    }
-    @include mediaQueriesXs {
-        grid-template-columns: 100%;
     }
 }
 
@@ -41,9 +37,6 @@
     h1 {
         color: $color-primary;
     }
-    h1.-alert {
-        color: $color-lightin;
-    }
     @include mediaQueriesXs {
         h1 {
             text-align: center;
@@ -52,10 +45,16 @@
 }
 
 .a-heroContent__text {
-    max-width: 76%;
+    max-width: 60%;
     margin-right: auto;
     margin-left: auto;
     line-height: 1.27;
+    @include mediaQueriesMd {
+        max-width: 80%;
+    }
+    @include mediaQueriesXs {
+        max-width: 98%;
+    }
 }
 
 // .a-heroContent__button

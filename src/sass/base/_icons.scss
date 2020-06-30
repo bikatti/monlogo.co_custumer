@@ -23,15 +23,12 @@
 }
 
 .a-instagram {
-    width: 20px;
-    margin-left: 10px;
-    // margin-right: 10px;
-    position: relative;
-    top: 3px;
+    width: 28px;
     content: url('../img/icons/instagram.svg');
-    @include mediaQueriesMd {
-        margin-left: $spaceXs;
-    }
+}
+.a-mailFooter {
+    width: 30px;
+    content: url('../img/icons/mail_blue.svg');
 }
 
 .a-iconsPodcast {

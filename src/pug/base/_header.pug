@@ -17,8 +17,11 @@ nav.o-nav.sticky
      li: a.a-itemLink(href=linksUrl[1]+"#podcastTalk") #{titles[2]}
      li: a.a-itemLink(href=linksUrl[1]+linksInternos[0]) #{titles[3]}
      li: a.a-itemLink(href=linksExternos[0], target="_blank") #{titles[5]}
-    a.a-button.a-noMargin(href=linksUrl[1]+linksInternos[0])
-     button.a-btn.-btnPrimary(type="button") #{titles[4]}
+     li: a.a-button.a-noMargin(href=linksUrl[1]+linksInternos[0])
+      button.a-btn.-btnPrimary(type="button") #{titles[4]}
+     li.-hide.-showMd
+      h3 Subscríbete a nuestro newsletter
+      +mailChimp("-footer", "", "-footer", "-btnFooter -btnMonlogo")
 
    .m-CallToAction
     a.a-button(href=linksUrl[1]+linksInternos[0])

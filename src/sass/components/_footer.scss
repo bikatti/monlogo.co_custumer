@@ -15,14 +15,16 @@
         grid-template-columns: 1fr 2fr 1fr 40%;
     }
     @include mediaQueriesMd {
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: "logoFooter" "subsFooter" "copyFooter";
-        grid-gap: $spaceMd 0;
+        grid-template-columns: 50% auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "logoFooter logoFooter" "usFooter usFooter" "courFooter subsFooter" "artiFooter artiFooter";
+        grid-gap: 0;
         justify-content: start;
     }
-    @include mediaQueriesXs {
-        grid-gap: $spaceRg 0;
+    @include mediaQueriesSm {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "logoFooter" "usFooter" "subsFooter" "courFooter " "artiFooter";
     }
 }
 
@@ -31,40 +33,50 @@
     margin-bottom: $spaceRg;
     padding-right: $spaceXs;
     margin-right: auto;
-
     img {
         width: 200px;
     }
     @include mediaQueriesMd {
         margin-bottom: 0;
     }
-    @include mediaQueriesXs {
-        padding-right: 0;
-        img {
-            width: 280px;
-        }
-    }
 }
 
 .m-footer__us {
     grid-area: usFooter;
     padding-left: $spaceXs;
+}
+.a-footerIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -$spaceXs;
+    margin-top: $spaceXs;
+    margin-left: $spaceXs;
+    .a-instagram {
+        margin-right: $spaceXs;
+    }
     @include mediaQueriesMd {
-        display: none;
+        margin-top: 12px;
     }
 }
 
 .m-footer__course {
     grid-area: courFooter;
     @include mediaQueriesMd {
-        display: none;
+        margin-top: 18px;
+        padding-left: $spaceXs;
+    }
+    @include mediaQueriesSm {
+        margin-top: 30px;
     }
 }
 
 .m-footer__article {
     grid-area: artiFooter;
     @include mediaQueriesMd {
-        display: none;
+        margin-top: $spaceSm;
+        padding-left: $spaceXs;
     }
 }
 
@@ -72,8 +84,9 @@
     grid-area: subsFooter;
     @include mediaQueriesMd {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
+        margin-top: 18px;
         margin-left: auto;
         margin-right: auto;
         h3 {
@@ -82,6 +95,9 @@
                 margin-top: 0;
             }
         }
+    }
+    @include mediaQueriesSm {
+        padding-left: $spaceXs;
     }
 }
 
@@ -113,21 +129,7 @@
     }
 }
 
-.a-footerIcons {
-    width: 50px;
-    margin-left: $spaceXs;
-    &:first-child {
-        width: 45px;
-        margin-left: 0;
-    }
-    &:last-child {
-        width: 60px;
-        margin-left: 5px;
-    }
-    img {
-        width: 100%;
-    }
-}
+
 
 .o-footerDeco {
     .a-thingsLeft {
@@ -146,9 +148,11 @@
         }
     }
 }
+
+
 .a-mailChimp__form {
     .-btnFooter {
-        padding: 5px 20px;
+        padding: 6px 20px;
         font-weight: 600;
     }
     display: flex;
@@ -165,14 +169,25 @@
     border-radius: 6px;
     border: 2px solid $color-primary;
     box-shadow: 4px 4px $color-alert;
-    padding: 5px $spaceXs;
+    padding: 6px $spaceXs;
     &:focus {
         outline: none;
         border-color: $color-secondary;
     }
-    @include mediaQueriesXs {
-        width: 190px;
-        padding-right: 5px;
-        padding-left: 8px;
+}
+
+// Firm Dev
+.m-footerFirmDev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $spaceSm;
+    p {
+        margin-right: $spaceSm;
+    }
+    @include mediaQueriesSm {
+        p {
+            margin-right: 5px;
+        }
     }
 }

@@ -3,19 +3,22 @@
   .m-footer__logo
    img(src=linksUrl[1]+logoResponsive[0], alt="")
   .m-footer__us
-   p Copyright © 2020 Prointelecto
+   p Copyright © 2020 Monlogo
+   .a-footerIcons
+    a.a-itemLink(href=linksUrl[1]+linksInternos[0]): .a-instagram
+    a.a-itemLink(href=linksUrl[1]+linksInternos[0]): .a-mailFooter
   .m-footer__course
-   h3 #{titles[3]}
+   h3 Compañia
    ol.m-listFooter
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Iniciación en el Ashtanga Yoga")
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Encendiendo el fuego interno")
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Fluyendo y depurando la base")
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Integrando y sellando la energía")
+    +footerLink(linksUrl[1]+linksInternos[0],"", titles[1])
+    +footerLink(linksUrl[1]+linksInternos[0],"", titles[2])
+    +footerLink(linksUrl[1]+linksInternos[0],"", titles[3])
+    +footerLink(linksUrl[1]+linksInternos[0],"", titles[5])
   .m-footer__article
-   h3 #{titles[0]}
+   h3 Recursos
    ol.m-listFooter
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Podemos mejorar y ayudar")
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Sobre el Ashtanga Yoga")
+    +footerLink(linksUrl[1]+linksInternos[0],"", "Promotores")
+    +footerLink(linksUrl[1]+linksInternos[0],"", "Programadores")
   .m-footer__subs
    h3 Subscríbete a nuestro newsletter
    +mailChimp("-footer", "", "-footer", "-btnFooter -btnMonlogo")

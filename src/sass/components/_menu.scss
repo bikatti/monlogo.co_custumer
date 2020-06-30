@@ -100,7 +100,7 @@
         background-color: $color-lightin;
         width: 100vw;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: start;
         flex-direction: column;
         transition: .3s;
@@ -134,15 +134,23 @@
         padding-right: 25px;
     }
     @include mediaQueriesMd {
+        max-width: 80%;
+        margin-left: $spaceSm;
+        margin-right: auto;
         padding-top: 0;
         padding-left: 0;
         margin-top: $spaceSm;
         margin-bottom: $spaceMd;
+        align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         li {
-            padding-left: 10px;
+            padding-top: $spaceSm;
+            padding-left: $spaceXs;
             padding-right: 0;
+        }
+        h3 {
+            margin-bottom: $spaceXs;
         }
     }
 }

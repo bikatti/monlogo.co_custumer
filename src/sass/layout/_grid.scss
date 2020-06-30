@@ -42,8 +42,8 @@ a.-padModifier {
     }
 }
 
-section .a-noMargin {
-    margin: 0;
+.a-noMargin {
+    margin: 0 !important;
 }
 
 section .a-noPadding {
@@ -91,10 +91,18 @@ section .-padSmBottom {
 }
 
 .-padBgTop {
-    padding-top: 80px;
+    padding-top: $spaceBg;
     @include mediaQueriesMd {
         padding-top: $spaceMd;
     }
+}
+
+.-padMdTop {
+    padding-top: $spaceMd;
+}
+
+.-padRgTop {
+    padding-top: $spaceRg;
 }
 
 .-containerText {
@@ -127,5 +135,25 @@ section .-padSmBottom {
     background-color: $bg;
     &Wow {
         background-color: $color-secondary;
+    }
+}
+
+// Display Show & Hide
+.-hide {
+    display: none;
+}
+.-hideSm {
+    @include mediaQueriesSm {
+        display: none;
+    }
+}
+.-showMd {
+    @include mediaQueriesMd {
+        display: block;
+    }
+}
+.-showSm {
+    @include mediaQueriesSm {
+        display: block;
     }
 }
