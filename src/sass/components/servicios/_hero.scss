@@ -1,0 +1,111 @@
+.o-hero {
+    position: relative;
+    padding-top: $spaceMd;
+    padding-bottom: $spaceRg;
+    box-sizing: border-box;
+    overflow: hidden;
+    @include mediaQueriesXs {
+        padding-top: $spaceRg;
+        padding-bottom: $spaceRg;
+    }
+}
+
+.m-heroContent {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-gap: 0 $spaceXs;
+    grid-template-areas: "textHero imgHero";
+    @include mediaQueriesMd {
+        grid-template-columns: 89%;
+        grid-template-rows: 1fr auto;
+        grid-gap: $spaceXs 0;
+        grid-template-areas: "textHero" "imgHero";
+        justify-content: center;
+    }
+    @include mediaQueriesXs {
+        grid-template-columns: 100%;
+    }
+}
+
+.m-heroContent__text {
+    grid-area: textHero;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: $spaceMd;
+    padding-left: $spaceRg;
+    @include mediaQueriesLg {
+        padding-left: 0;
+    }
+    @include mediaQueriesMd {
+        padding-bottom: 0;
+    }
+}
+
+.a-heroContent__title {
+    padding-bottom: $spaceXs;
+}
+
+.a-heroContent__text {
+    line-height: 1.4;
+    max-width: 83%;
+    padding-bottom: $spaceSm;
+    color: $color-darkengrey;
+    @include mediaQueriesMd {
+        max-width: 100%;
+    }
+}
+
+.a-heroContent__button {
+    display: block;
+}
+
+.m-heroContent__img {
+    grid-area: imgHero;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.m-heroContent__dec {
+    .a-squarePoints {
+        position: absolute;
+        width: 300px;
+        left: -185px;
+        bottom: -110px;
+    }
+    .a-squarePoints + .a-squarePoints {
+        position: absolute;
+        width: 300px;
+        right: -185px;
+        top: -110px;
+        left: auto;
+        bottom: auto;
+    }
+    @include mediaQueriesMd {
+        .a-squarePoints {
+            left: -180px;
+            bottom: -160px;
+        }
+        .a-squarePoints + .a-squarePoints {
+            right: -190px;
+            top: -160px;
+        }
+    }
+    @include mediaQueriesXs {
+        .a-squarePoints {
+            left: -250px;
+            bottom: -160px;
+        }
+        .a-squarePoints + .a-squarePoints {
+            right: -250px;
+            top: -100px;
+        }
+    }
+}

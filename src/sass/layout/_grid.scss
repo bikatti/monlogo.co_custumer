@@ -90,6 +90,10 @@ section .-padSmBottom {
     padding-bottom: $spaceSm !important;
 }
 
+.-padRgBottom {
+    padding-bottom: $spaceRg;
+}
+
 .-padBgTop {
     padding-top: $spaceBg;
     @include mediaQueriesMd {
@@ -135,6 +139,9 @@ section .-padSmBottom {
     background-color: $bg;
     &Wow {
         background-color: $color-secondary;
+    }
+    &Calm {
+        background-color: $color-calm;
     }
 }
 

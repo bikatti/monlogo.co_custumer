@@ -1,0 +1,136 @@
+.o-packs {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.o-packs__content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    @include mediaQueriesLg {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include mediaQueriesMd {
+        flex-direction: column-reverse;
+    }
+}
+
+.m-packs__cards {
+    margin-top: $spaceSm;
+    max-width: 66%;
+    margin-left: auto;
+    @include mediaQueriesMd {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+.a-packs__img {
+    position: absolute;
+    max-width: 52%;
+    left: -180px;
+    img {
+        width: 100%;
+    }
+    @include mediaQueriesMd {
+        margin-top: $spaceSm;
+        position: relative;
+        max-width: 100%;
+        left: -240px;
+    }
+    @include mediaQueriesXs {
+        margin-top: $spaceRg;
+        left: -140px;
+        max-width: 500px;
+        width: 110%;
+    }
+}
+
+.m-packsbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: $spaceRg;
+    @include mediaQueriesLg {
+        flex-wrap: wrap;
+    }
+    @include mediaQueriesMd {
+        margin-top: 0;
+    }
+}
+
+.m-pack {
+    box-shadow: 6px 6px $color-alert;
+    border: 1px solid $color-primary;
+    width: 284px;
+    height: auto;
+    margin: $spaceSm;
+    text-align: left;
+    opacity: 0;
+    display: inline-block;
+    padding: 25px $spaceSm $spaceXs;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    top: 60px;
+    z-index: 10;
+    background-color: $color-lightin;
+    background-repeat: no-repeat;
+    animation-name: Upbox;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.15, 1, 0.33, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transition: all 0.3s cubic-bezier(0.15, 1, 0.33, 1) 0s;
+    &:hover {
+        transform: translateY(-2px);
+        text-decoration: none;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &__hero {
+        display: flex;
+    }
+    &__title {
+        color: $color-primary;
+        h3 {
+            padding-bottom: $spaceXs;
+            font-weight: 600;
+        }
+    }
+    &__img {
+        margin-left: $spaceXs;
+        height: auto;
+        width: 100px;
+        box-sizing: content-box;
+    }
+    @include mediaQueriesSm {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: $spaceSm;
+    }
+}
+
+.m-pack__text {
+    margin-bottom: $spaceSm;
+}
+
+@keyframes Upbox {
+    0% {
+        top: 60px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}

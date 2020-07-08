@@ -5,13 +5,13 @@
   .m-footer__us
    p Copyright © 2020 Monlogo
    .a-footerIcons
-    a.a-itemLink(href=linksUrl[1]+linksInternos[0]): .a-instagram
-    a.a-itemLink(href=linksUrl[1]+linksInternos[0]): .a-mailFooter
+    a.a-itemLink(href=linksExternos[0]): .a-instagram
+    a.a-itemLink(href="mailto:"+linksExternos[1]): .a-mailFooter
   .m-footer__course
    h3 Compañia
    ol.m-listFooter
     +footerLink(linksUrl[1]+linksInternos[0],"", titles[1])
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[2])
+    +footerLink(linksUrl[1]+linksInternos[1],"", titles[2])
     +footerLink(linksUrl[1]+linksInternos[0],"", titles[3])
     +footerLink(linksUrl[1]+linksInternos[0],"", titles[5])
   .m-footer__article

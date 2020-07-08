@@ -4,7 +4,7 @@
     padding-top: 38px;
     padding-bottom: $spaceRg;
     @include mediaQueriesMd {
-        padding-top: $spaceSm;
+        padding-top: $spaceRg;
         padding-bottom: $spaceSm;
     }
 }

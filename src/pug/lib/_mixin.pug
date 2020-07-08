@@ -2,13 +2,23 @@
 mixin boxCourse(a="#", img, n, title="Curso de ...", d, texto="Hey!! aqui va descripción")
  a(class="m-box -course m-box__anima", href=""+a)
   .m-box__containerImg
-   img(class="a-course__img", src=linksUrl[1]+img, alt="Curso de "+n)
+   img(class="a-course__img", src=linksUrl[1]+img, alt=""+n)
   .m-box__container
    h3.m-box__title=title
    .m-box__profile
      .a-arrowWierd
      p=d
    p.a-box__text=texto
+
+mixin pack__hero(title, sub, img, alt)
+ .m-pack__hero
+  .m-pack__title
+   h3.a-textAndImg__title=title
+   .m-textAndImg__subtitle.-padSmBottom
+    .a-arrowWierd
+    span.a-textAndImg__subtitleText=sub
+  .m-pack__img
+   img(src=linksUrl[1]+img, alt=""+alt)
 
 mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
  // Begin Mailchimp Signup Form
@@ -28,3 +38,10 @@ mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
 
 mixin footerLink(lin=linksUrl[1],acl="",pr="Link")
  li: a(href=""+lin, class="a-footerLink "+acl)=pr
+
+mixin component(img="assets/img/index/prointelecto_witness.png", alt, t="Logotipo de social media")
+ .m-component
+  .m-component__Img
+   img(src=linksUrl[1]+img, alt=""+alt)
+  .m-component__text
+   h3.a-component__text=t

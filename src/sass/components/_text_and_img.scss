@@ -1,4 +1,4 @@
-.o-aboutUs, .o-witness {
+.o-aboutUs, .o-witness, .o-textAndImg {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
@@ -11,6 +11,12 @@
 .o-witness {
     @include mediaQueriesMd {
         padding-bottom: 0;
+    }
+}
+
+.o-textAndImg {
+    @include mediaQueriesMd {
+        padding-top: $spaceRg;
     }
 }
 
@@ -43,6 +49,7 @@
             grid-template-areas: "problemContent" "problemImg";
         }
         &Left {
+            grid-gap: $spaceRg 0;
             grid-template-columns: 80%;
             justify-content: center;
             grid-template-rows: 1fr auto;
@@ -116,7 +123,7 @@
 .m-textAndImg__img.-right {
     grid-area: explainImg;
     margin: auto;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     margin-right: 0;
     max-width: 98%;
     img {

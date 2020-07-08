@@ -1,0 +1,64 @@
+.o-componentsService {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.m-components {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-component {
+    max-width: 200px;
+    margin-right: $spaceRg;
+    margin-left: $spaceRg;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    @include mediaQueriesLg {
+        margin-bottom: $spaceSm;
+        &:first-child {
+            margin-left: $spaceRg;
+        }
+        &:last-child {
+            margin-right: $spaceRg;
+        }
+    }
+    @include mediaQueriesMd {
+        margin-bottom: $spaceRg;
+    }
+    @include mediaQueriesXs {
+        margin-right: 0;
+        margin-left: 0;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.m-component__Img {
+    width: 100%;
+    margin-bottom: $spaceXs;
+    img {
+        max-width: 100%;
+    }
+}
+
+h2.a-component__text {
+    margin-bottom: 20px;
+}
+
+.a-component__text {
+    text-align: center;
+}
