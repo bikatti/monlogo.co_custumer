@@ -26,9 +26,9 @@
     <meta name="twitter:image" content="https://monlogo.co/assets/img/banner/banner.png"/>
     <meta name="twitter:image:alt" content="Logo de Monlogo con fondo azul rodeado de elementos de website"/>
     <!-- metas de fav-->
-    <link rel="shortcut icon" href="/assets/img/logo/isotipo_monlogo_rgb.png" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="/assets/img/logo/isotipo_monlogo_rgb.png" type="image/png" sizes="180x180"/>
-    <link rel="icon" href="/assets/img/logo/isotipo_monlogo_rgb.png" type="image/png" sizes="196x196"/>
+    <link rel="shortcut icon" href="/assets/img/logo/isotipo_favicon.svg" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/assets/img/logo/isotipo_favicon.svg" type="image/png" sizes="180x180"/>
+    <link rel="icon" href="/assets/img/logo/isotipo_favicon.svg" type="image/png" sizes="196x196"/>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <meta name="og:url" content="https://monlogo.co"/>
@@ -42,41 +42,22 @@
     <nav class="o-nav sticky">
       <div class="o-navFixedContainer">
         <div class="o-nav__content">
-          <div class="a-brand"><a href="/"><img class="a-brand__Img" src="/assets/img/logo/imagotipo_monlogo_color.png" alt=""/></a></div>
-          <div class="a-burguer" id="burger"><img class="a-burguer__menu" src="/assets/img/icons/burguer.svg" alt=""/></div>
+          <div class="a-brand"><a href="/"><img class="a-brand__Img" src="/assets/img/logo/imagotipo_rgb.png" alt="Logo de monlogo"/></a></div>
+          <div class="a-burguer" id="burger"><img class="a-burguer__menu" src="/assets/img/icons/burguer.svg" alt="Icono de menu"/></div>
           <div class="m-itemContent">
             <div class="a-burguerOut" id="burgerOut"><img class="a-burguerOut__menu" src="/assets/img/icons/close.svg" alt=""/></div>
-            <div class="a-brandMobile"><a href="/"><img class="a-brandMobile__Img" src="/assets/img/logo/imagotipo_monlogo_color.png" alt=""/></a></div>
+            <div class="a-brandMobile"><a href="/"><img class="a-brandMobile__Img" src="/assets/img/logo/imagotipo_rgb.png" alt="Logo de monlogo"/></a></div>
             <ul class="m-itemContent__list">
-              <li><a class="a-itemLink" href="/index.html">Nosotros</a></li>
-              <li><a class="a-itemLink" href="/#podcastTalk">Servicios</a></li>
-              <li><a class="a-itemLink" href="/index.html">Preguntas Frecuentes</a></li>
-              <li><a class="a-itemLink" href="https://instagram.com/monlogoteam" target="_blank">Unirse</a></li>
+              <li class="m-dropdownMenu"><a class="a-itemLink m-dropdownMenu__item" href="#">Servicios <i class="-arrowDown"></i></a>
+                <ul>
+                  <li><a class="a-itemLink" href="/servicios/identidad-corporativa.html">Identidad Corporativa</a></li>
+                  <li><a class="a-itemLink" href="/servicios/diseno-paginas-web.html">Diseño de páginas web</a></li>
+                  <li><a class="a-itemLink" href="/servicios/programacion-web.html">Programación web</a></li>
+                </ul>
+              </li>
+              <li><a class="a-itemLink" href="/monlogo/home.html">Ingresar</a></li>
               <li><a class="a-button a-noMargin" href="mailto:team@monlogo.co">
                   <button class="a-btn -btnPrimary" type="button">Contactar</button></a></li>
-              <li class="-hide -showMd">
-                <h3>Subscríbete a nuestro newsletter</h3>
-                <!-- Begin Mailchimp Signup Form-->
-                <div class="m-heroContent__form" id="mc_embed_signup">
-                  <form class="validate" action="https://monlogo.us10.list-manage.com/subscribe/post?u=c00182333b9094ee16959a0c6&amp;amp;id=d616c3f0d8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
-                    <div class="a-mailChimp__form -footer" id="mc_embed_signup_scroll">
-                      <div class="a-mailchimpGroup mc-field-group ">
-                        <input class="required email a-mailchimpMail -footer" type="email" placeholder="Escribe tu email aquí" value="" name="EMAIL" id="mce-EMAIL"/>
-                      </div>
-                      <div class="clear" id="mce-responses">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" div="div" id="mce-success-response" style="display:none"></div>
-                      </div>
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_c00182333b9094ee16959a0c6_d616c3f0d8" tabindex="-1" value=""/>
-                      </div>
-                      <div class="clear a-btn">
-                        <input class="button -btnFooter -btnMonlogo" type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe"/>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </li>
             </ul>
           </div>
           <div class="m-CallToAction"><a class="a-button" href="mailto:team@monlogo.co">
@@ -119,7 +100,7 @@
                 <p>Distintiva y memorable</p>
               </div>
               <p class="a-box__text">Diseñaremos una Identidad para tu negocio que lo hará más llamativo y de fácil recuerdo para el consumidor.</p>
-            </div></a><a class="m-box -course m-box__anima" href="/index.html">
+            </div></a><a class="m-box -course m-box__anima" href="/servicios/diseno-paginas-web.html">
             <div class="m-box__containerImg"><img class="a-course__img" src="/assets/img/index/img_diseno_ui.png" alt="Ilustración de Diseño de páginas web"/></div>
             <div class="m-box__container">
               <h3 class="m-box__title">Diseño de páginas web</h3>
@@ -128,7 +109,7 @@
                 <p> Unico e impactante</p>
               </div>
               <p class="a-box__text">El diseño que haremos de tu página web hará que luzca muy bien, sea de fácil navegación y conecte con el usuario.</p>
-            </div></a><a class="m-box -course m-box__anima" href="/index.html">
+            </div></a><a class="m-box -course m-box__anima" href="/servicios/programacion-web.html">
             <div class="m-box__containerImg"><img class="a-course__img" src="/assets/img/index/img_website.png" alt="Ilustración de Programación web"/></div>
             <div class="m-box__container">
               <h3 class="m-box__title">Programación web</h3>
@@ -243,7 +224,7 @@
     <footer class="o-footer -padSmTopBottom">
       <div class="o-footerContent -padSmTopBottom">
         <div class="m-footer -ContainerUniversal">
-          <div class="m-footer__logo"><img src="/assets/img/logo/imagotipo_monlogo_color.png" alt=""/></div>
+          <div class="m-footer__logo"><img src="/assets/img/logo/imagotipo_rgb.png" alt=""/></div>
           <div class="m-footer__us">
             <p>Copyright © 2020 Monlogo</p>
             <div class="a-footerIcons"><a class="a-itemLink" href="https://instagram.com/monlogoteam">
@@ -251,19 +232,18 @@
                 <div class="a-mailFooter"></div></a></div>
           </div>
           <div class="m-footer__course">
-            <h3>Compañia</h3>
+            <h3>Servicios</h3>
             <ol class="m-listFooter">
-              <li><a class="a-footerLink " href="/index.html">Nosotros</a></li>
-              <li><a class="a-footerLink " href="/servicios/identidad-corporativa.html">Servicios</a></li>
-              <li><a class="a-footerLink " href="/index.html">Preguntas Frecuentes</a></li>
-              <li><a class="a-footerLink " href="/index.html">Unirse</a></li>
+              <li><a class="a-footerLink -colorAlert -medium" href="/servicios/identidad-corporativa.html">Identidad Corporativa</a></li>
+              <li><a class="a-footerLink -colorAlert -medium" href="/servicios/diseno-paginas-web.html">Diseño de páginas web</a></li>
+              <li><a class="a-footerLink -colorAlert -medium" href="/servicios/programacion-web.html">Programación web</a></li>
             </ol>
           </div>
           <div class="m-footer__article">
             <h3>Recursos</h3>
             <ol class="m-listFooter">
-              <li><a class="a-footerLink " href="/index.html">Promotores</a></li>
-              <li><a class="a-footerLink " href="/index.html">Programadores</a></li>
+              <li><a class="a-footerLink -colorAlert -medium" href="/index.html">Promotores</a></li>
+              <li><a class="a-footerLink -colorAlert -medium" href="/index.html">Programadores</a></li>
             </ol>
           </div>
           <div class="m-footer__subs">

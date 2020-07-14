@@ -27,10 +27,27 @@
     }
 }
 
+.a-packs__alt {
+    align-items: flex-start;
+    max-width: 89%;
+    margin-left: auto;
+    h3 {
+        position: relative;
+        &::before {
+            margin-right: $spaceXs;
+            content: url('../img/icons/arrow_wierd.svg');
+        }
+    }
+    @include mediaQueriesMd {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
 .a-packs__img {
     position: absolute;
-    max-width: 52%;
-    left: -180px;
+    max-width: 38%;
+    left: $spaceSm;
     img {
         width: 100%;
     }
@@ -38,13 +55,10 @@
         margin-top: $spaceSm;
         position: relative;
         max-width: 100%;
-        left: -240px;
+        left: 0;
     }
     @include mediaQueriesXs {
         margin-top: $spaceRg;
-        left: -140px;
-        max-width: 500px;
-        width: 110%;
     }
 }
 
@@ -105,10 +119,16 @@
         }
     }
     &__img {
-        margin-left: $spaceXs;
-        height: auto;
-        width: 100px;
-        box-sizing: content-box;
+        margin-left: auto;
+        &.-smaller {
+            max-width: 60px;
+        }
+        &.-normal {
+            max-width: 130px;
+        }
+        img {
+            width: 100%;
+        }
     }
     @include mediaQueriesSm {
         margin-left: 0;

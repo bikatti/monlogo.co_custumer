@@ -1,0 +1,133 @@
+section.o-textManual.-bg.-padBgBottom
+ .m-textManual.-ContainerBlog
+  .m-textManual__title
+   .m-text__icon
+    img.a-textManual__icon(src=linksUrl[1]+logoResponsive[1], alt="")
+   .m-text__customer
+    h1.a-text__header Manual de identidad corporativa
+    .m-text__details
+     .a-arrowWierd
+     h3.a-text__textDetails Signos, elementos distintivos, normas y aplicaciones
+
+
+  article.m-text__blog
+   .m-text__section
+    .m-textContent.-gridGapXs
+     .m-columnOne
+      p.-padSmBottom Este manual reúne las herramientas básicas para el correcto uso y aplicación gráfica de la marca Monlogo. Este ayudará a todas aquellas personas responsables de interpretar, comunicar y aplicar la marca en sus diferentes ámbitos.
+      p.-padSmBottom El correcto uso de la marca contribuirá a tener consistencia con el mensaje que se quiere dar al usuario y lograr ser identificada más rápido.
+
+     .m-columnTwo
+      p Hemos diseñado una versión #[b.-regular.-uppercase pdf] del manual de identidad corporativa para que pueda descargarlo e imprimirlo. Si desea verlo o descargarlo haga #[a.a-text__title.-bold(href="https://drive.google.com/file/d/1gHWz151I8sE6W2IOeFmgyZ0I6K4G2L2j/view?usp=sharing", target="_blank") clic aquí]
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Logotipo
+    +ImgTextContainer("", "-m-w75 -mAuto","Versión principal", "", "assets/img/manual_monlogo/imagotipo_explain_big.png")
+
+   .m-text__section
+    .m-textContent
+     .m-columnOne
+      .m-text__sectionHeader
+       .m-text__sectionHeaderText
+        h3.a-text__title.-uppercase.-italic Paleta de colores
+      h3.-uppercase.-italic.-mSmTop Paleta de colores principal
+      +colorContainer("","1","#2e279d", "46, 39, 157","93%, 95%, 0%, 0%", "242°, 74%, 61%","2746 C")
+      +colorContainer("","2","#46b3e6", "70, 179, 230","88%, 3%, 11, 0%", "199°, 69%, 90%","279 C")
+      +colorContainer("","3","#0779e4", "7, 121, 228 ","92%, 51%, 0%, 18%", "208°, 96%, 89%","3005 C")
+      +colorContainer("","4","#f5d265", "245, 210, 101","0%, 14%, 59%, 4%", "46°, 88%, 68%","1225 C")
+      h3.-uppercase.-italic.-padRgTop Paleta de colores en grises
+      +colorContainer("","5","#39383B", "57, 56, 59","3%, 5%, 0%, 77%", "260°, 3%, 23%","426 C")
+      +colorContainer("","6","#76737B", "118, 115, 123","4%, 7%, 0%, 52%", "270°, 3%, 46%","Cool Gray 10 C")
+      +colorContainer("","7","#BAB7C1", "186, 183, 193","4%, 5%, 0%, 24%", "252°, 8%, 74%","2746 C")
+      +colorContainer("","8","#fefefe", "254, 254, 254","0%, 0%, 0%, 0%", "0°, 0%, 100%","white")
+     .m-columnTwo
+      .m-text__sectionHeader
+       .m-text__sectionHeaderText
+        h3.a-text__title.-uppercase.-italic Área de seguridad y reducibilidad
+      p El área de seguridad es un espacio que debe ser respetado y no poner nada (como texto, otros logotipos, imágenes, etc.) para que la marca tenga una buena legibilidad.
+      +ImgTextContainer("", "-m-w75 ","", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_spacing.png")
+      +ImgTextContainer("-mSmTop ", "","Reducibilidad", "-mAutoRight -m-w30", "assets/img/manual_monlogo/imagotipo_sizing.svg")
+   
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Tipografía
+    .m-textContent
+     .m-columnOne
+      h3.-uppercase.-italic.-padXsBottom Tipografía del logotipo
+      p La tipografía del logotipo es Ubutu, aquí se encontrará sus diferentes versiones en Light, Regular, Medium y Bold.
+      a.a-noMargin.a-button(href=linkfont[0])
+       button.a-btn.-btnSecondary.-mSmTop(type="button") Ir a google font
+      +TypoTextContainer("a-manualTypoFont__one -padSmTop", typoManual[0]+" "+Weight[2], "-thin")
+      +TypoTextContainer("a-manualTypoFont__one", typoManual[0]+" "+Weight[3], "-regular")
+      +TypoTextContainer("a-manualTypoFont__one", typoManual[0]+" "+Weight[4], "-medium")
+      +TypoTextContainer("a-manualTypoFont__one", typoManual[0]+" "+Weight[6], "-bold")
+     .m-columnTwo
+      h3.-uppercase.-italic.-padXsBottom Tipografía secundaria
+      p La tipografía seccundaria es Hind. Esta sirve para soportes o aplicaciones que, por razones técnicas no permiten la utilización de la tipografía del logotipo, por ejemplo en la página Web, o los textos editados por la empresa.
+      a.a-noMargin.a-button(href=linkfont[1])
+       button.a-btn.-btnSecondary.-mSmTop(type="button") Ir a google font
+      +TypoTextContainer("a-manualTypoFont__two -padSmTop", typoManual[1]+" "+Weight[2], "-thin")
+      +TypoTextContainer("a-manualTypoFont__two", typoManual[1]+" "+Weight[3], "-regular")
+      +TypoTextContainer("a-manualTypoFont__two", typoManual[1]+" "+Weight[4], "-medium")
+      +TypoTextContainer("a-manualTypoFont__two", typoManual[1]+" "+Weight[6], "-bold")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Aplicaciones correctas del #{words[1]}
+    .m-textContent
+     .m-columnOne
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Versión principal", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_explain_normal.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Versión blanco y negro", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_explain_grey.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Fondo de color oscuro", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_bg_1.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Fondo fotográfico oscuro", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_bg_4.png")
+     .m-columnTwo
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Versión principal en negativo", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_negativo_1.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Versión blanco y negro en negativo", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_negativo_2.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Fondo de color claro", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_bg_2.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Fondo fotográfico oscuro claro", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_bg_3.png")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Aplicaciones incorrectas del #{words[1]}
+    .m-textContent
+     .m-columnOne
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Aplicación incorrecta del color", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_color.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Deformación", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_bug.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Ocultación del logotipo", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_hide.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","tipografía incorrecta", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_typo.png")
+     .m-columnTwo
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Porcentaje de opacidad modificado", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_opacity.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Espaciado incorrecto", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_kerning.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Escribir en los espacios de seguridad", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_writespace.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 ","Escribir encima del logotipo", "-mAutoRight ", "assets/img/manual_monlogo/imagotipo_dont_writelogo.png")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Recursos gráfico
+    .m-textContent
+     .m-columnOne
+      +ImgTextContainer("-mSmTop ", "-m-w30 -mAutoRight","Recursos gráficos individuales", "-w30", "assets/img/manual_monlogo/points_square.svg")
+      +ImgTextContainer("-mSmTop ", "-m-w30 -mAutoRight","", " -w30", "assets/img/manual_monlogo/circle_lines.svg")
+      +ImgTextContainer("-mSmTop ", "-m-w30 -mAutoRight","", " -w30", "assets/img/manual_monlogo/work_config.svg")
+     .m-columnTwo
+      +ImgTextContainer("-mSmTop ", "-m-w75 -mAuto","Patrones para banners o fondos de imágenes", " ", "assets/img/manual_monlogo/imagotipo_banner_1.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 -mAuto","", " ", "assets/img/manual_monlogo/imagotipo_banner_2.png")
+      +ImgTextContainer("-mSmTop ", "-m-w75 -mAuto","Banner para redes sociales", " ", "assets/img/manual_monlogo/banner_web.png")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Aplicaciones
+    .m-textContent
+     .m-columnOne
+      +ImgTextContainer("-mSmTop ", "-m-w75 -mAuto","Favicon en la pestaña del navegador", "", "assets/img/manual_monlogo/mockup_nav.png")
+      +ImgTextContainer("-mSmTop ", "-m-w90 -mAuto","Tarjeta de presentación", "", "assets/img/manual_monlogo/mockup_tarjeta.png")
+
+     .m-columnTwo
+      +ImgTextContainer("-mSmTop ", "-m-w75 -mAuto","Perfil de instagram", "", "assets/img/manual_monlogo/mockup_instagram.png")

@@ -10,15 +10,15 @@ mixin boxCourse(a="#", img, n, title="Curso de ...", d, texto="Hey!! aqui va des
      p=d
    p.a-box__text=texto
 
-mixin pack__hero(title, sub, img, alt)
+mixin pack__hero(title, sub, img, w)
  .m-pack__hero
   .m-pack__title
    h3.a-textAndImg__title=title
    .m-textAndImg__subtitle.-padSmBottom
     .a-arrowWierd
     span.a-textAndImg__subtitleText=sub
-  .m-pack__img
-   img(src=linksUrl[1]+img, alt=""+alt)
+  div(class="m-pack__img "+w)
+   img(src=linksUrl[1]+img, alt="icono "+title)
 
 mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
  // Begin Mailchimp Signup Form
@@ -39,9 +39,35 @@ mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
 mixin footerLink(lin=linksUrl[1],acl="",pr="Link")
  li: a(href=""+lin, class="a-footerLink "+acl)=pr
 
-mixin component(img="assets/img/index/prointelecto_witness.png", alt, t="Logotipo de social media")
+mixin component(img="assets/img/index/prointelecto_witness.png", t="Logotipo de social media")
  .m-component
   .m-component__Img
-   img(src=linksUrl[1]+img, alt=""+alt)
+   img(src=linksUrl[1]+img, alt=""+t)
   .m-component__text
    h3.a-component__text=t
+
+//- Text Blog & Costumer pages
+mixin ImgTextContainer(w, container, text, c, img)
+ div(class="m-text__img "+w)
+  h3.-uppercase.-italic.-padXsBottom=text
+  div(class=""+container)
+   img(class="a-text__img -mXsBottom "+c, src=linksUrl[1]+""+img, alt=""+text)
+
+mixin TypoTextContainer(w, title, peso)
+ div(class="m-text__typo -mSmTop "+w)
+  h3.a-text__title.-uppercase.-italic=title
+  p(class="-uppercase "+peso) abcdefghijklmnopqrstuvwxyz
+  p(class=""+peso) abcdefghijklmnopqrstuvwxyz
+  p(class=""+peso) 0123456789 (.:,;&%€)
+
+mixin colorContainer(w,color,h,rgb,cmyk,hsl,pantone)
+ div(class="m-text__paletteColor -mSmTop "+w)
+  div(class="m-squareColor -color-"+color)
+  div(class="m-text__infoColor")
+   div(class="m-text__columnColor")
+    p(class="-uppercase -medium") Hex #{h}
+    p(class="-uppercase -medium") rgb #{rgb}
+    p(class="-uppercase -medium") cmyk #{cmyk}
+   div(class="m-text__columnColor")
+    p(class="-uppercase -medium") hsl #{hsl}
+    p(class="-uppercase -medium") pantone #{pantone}

@@ -8,17 +8,17 @@
     a.a-itemLink(href=linksExternos[0]): .a-instagram
     a.a-itemLink(href="mailto:"+linksExternos[1]): .a-mailFooter
   .m-footer__course
-   h3 Compañia
+   h3 #{titles[2]}
    ol.m-listFooter
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[1])
-    +footerLink(linksUrl[1]+linksInternos[1],"", titles[2])
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[3])
-    +footerLink(linksUrl[1]+linksInternos[0],"", titles[5])
+    +footerLink(linksUrl[1]+linksInternos[1],"-colorAlert -medium", services[0])
+    +footerLink(linksUrl[1]+linksInternos[2],"-colorAlert -medium", services[1])
+    +footerLink(linksUrl[1]+linksInternos[3],"-colorAlert -medium", services[2])
+    //- +footerLink(linksUrl[1]+linksInternos[0],"", titles[5])
   .m-footer__article
    h3 Recursos
    ol.m-listFooter
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Promotores")
-    +footerLink(linksUrl[1]+linksInternos[0],"", "Programadores")
+    +footerLink(linksUrl[1]+linksInternos[0],"-colorAlert -medium", "Promotores")
+    +footerLink(linksUrl[1]+linksInternos[0],"-colorAlert -medium", "Programadores")
   .m-footer__subs
    h3 Subscríbete a nuestro newsletter
    +mailChimp("-footer", "", "-footer", "-btnFooter -btnMonlogo")

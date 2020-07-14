@@ -6,23 +6,17 @@ html(lang="es")
   meta(name="og:url", content="https://monlogo.co")
   meta(name="title", content=titles[0])
   meta(name="description", content="Llevamos tu negocio al mundo digital, en un mundo cada vez más tecnológico, hacemos la transformación digital de tu negocio aumentando su exposición a nivel mundial las 24 horas/todos los días del año.")
-  link(rel="stylesheet", href=linksUrl[1]+"assets/css/all.css")
-  title #{services[0]} | #{titles[0]}
+  link(rel="stylesheet", href=linksUrl[1]+"assets/css/dashboard.css")
+  title Home base | #{titles[0]}
  body.o-colorIndex
   // header
   include ../base/_header.pug
+ 
+  // Hero
+  include ../components/monlogo/home/_hero.pug
 
-  // hero
-  include ../components/servicios/i_c/_hero.pug
-
-  // Explian
-  include ../components/servicios/i_c/_text.pug
-
-  // Packs & service
-  include ../components/servicios/i_c/_packs.pug
-
-  // contact and faq
-  include ../components/_contact_faq.pug
+  // text
+  include ../components/monlogo/home/_textblog.pug
 
   // footer
   include ../base/_footer.pug

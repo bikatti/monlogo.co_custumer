@@ -2,24 +2,28 @@ nav.o-nav.sticky
  .o-navFixedContainer
   .o-nav__content
    .a-brand
-    a(href=linksUrl[1]): img.a-brand__Img(src=linksUrl[1]+logoResponsive[0], alt="")
+    a(href=linksUrl[1]): img.a-brand__Img(src=linksUrl[1]+logoResponsive[0], alt="Logo de monlogo")
 
    .a-burguer#burger
-    img.a-burguer__menu(src=linksUrl[1]+"assets/img/icons/burguer.svg", alt="")
+    img.a-burguer__menu(src=linksUrl[1]+"assets/img/icons/burguer.svg", alt="Icono de menu")
 
    .m-itemContent
     .a-burguerOut#burgerOut
      img.a-burguerOut__menu(src=linksUrl[1]+"assets/img/icons/close.svg", alt="")
     .a-brandMobile
-     a(href=linksUrl[1]): img.a-brandMobile__Img(src=linksUrl[1]+logoResponsive[0], alt="")
+     a(href=linksUrl[1]): img.a-brandMobile__Img(src=linksUrl[1]+logoResponsive[0], alt="Logo de monlogo")
     ul.m-itemContent__list
-     li: a.a-itemLink(href=linksUrl[1]+linksInternos[0]) #{titles[1]}
-     li: a.a-itemLink(href=linksUrl[1]+"#podcastTalk") #{titles[2]}
-     li: a.a-itemLink(href=linksUrl[1]+linksInternos[0]) #{titles[3]}
-     li: a.a-itemLink(href=linksExternos[0], target="_blank") #{titles[5]}
+     li.m-dropdownMenu
+      a.a-itemLink.m-dropdownMenu__item(href="#") #{titles[2]} #[i.-arrowDown]
+      ul
+       li: a.a-itemLink(href=linksUrl[1]+linksInternos[1]) #{services[0]}
+       li: a.a-itemLink(href=linksUrl[1]+linksInternos[2]) #{services[1]}
+       li: a.a-itemLink(href=linksUrl[1]+linksInternos[3]) #{services[2]}
+     //- li: a.a-itemLink(href=linksExternos[0], target="_blank") #{titles[5]}
+     li: a.a-itemLink(href=monlogoInternos[2]) Ingresar
      li: a.a-button.a-noMargin(href="mailto:"+linksExternos[1])
       button.a-btn.-btnPrimary(type="button") #{titles[4]}
-     li.-hide.-showMd
+     //- li.-hide.-showMd
       h3 Subscríbete a nuestro newsletter
       +mailChimp("-footer", "", "-footer", "-btnFooter -btnMonlogo")
 

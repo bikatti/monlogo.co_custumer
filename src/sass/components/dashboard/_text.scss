@@ -1,0 +1,171 @@
+.o-textManual {
+    position: relative;
+    padding-top: $spaceXs;
+    box-sizing: border-box;
+}
+
+// Text of header/title
+.m-text__icon { 
+    width: 100px;
+    margin-top: -$spaceBg;
+    position: relative;
+    z-index: 2;
+    img {
+        width: 100%;
+    }
+}
+.m-text__customer {
+    margin-top: $spaceRg;
+}
+
+.a-text__header {
+    color: $color-primary;
+}
+
+.m-text__details {
+    display: flex;
+    align-items: center;
+    .a-arrowWierd {
+        width: $spaceMd;
+    }
+    .a-text__textDetails {
+        margin-left: $spaceXs;
+    }
+}
+
+// Text of blog
+.m-text__blog {
+    margin-top: $spaceRg ;
+    @include mediaQueriesXs {
+        margin-top: 0;
+    }
+}
+.m-text__section {
+    margin-bottom: $spaceMd;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include mediaQueriesXs {
+        margin-bottom: $spaceBg;
+    }
+}
+.m-text__sectionHeader {
+    &Text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: $spaceXs;
+    }
+    &::after {
+        display: block;
+        height: 3px;
+        width: 100%;
+        opacity: 1;
+        content: '';
+        margin-bottom: 18px;
+        background-color: $color-alert;
+    }
+}
+
+.a-text__title {
+    color: $color-alert;
+}
+.m-text__img {
+    .a-text__img {
+        margin-top: $spaceXs;
+        width: 100%;
+    }
+    @include mediaQueriesXs { 
+        .a-text__img {
+            margin-left: 0;
+        }
+    }
+}
+.m-text__typo {
+    p {
+        font-size: $font01;
+    }
+}
+
+// Text content on two columns
+.m-textContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 $spaceMd;
+    @include mediaQueriesMd {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr auto;
+        grid-gap: $spaceMd 0;
+        justify-content: center;
+        &.-gridGapXs {
+            grid-gap: $spaceXs 0;
+        }
+    }
+}
+
+.m-text__paletteColor {
+    display: flex;
+    flex-direction: row;
+}
+.m-text__infoColor {
+    display: flex;
+    flex-direction: row;
+    .m-text__columnColor {
+        margin-right: $spaceSm;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include mediaQueriesXs {
+        flex-direction: column;
+        .m-text__columnColor {
+            margin-right: 0;
+        }
+    }
+}
+.m-squareColor {
+    width: 55px;
+    height: 55px;
+    margin-right: $spaceSm;
+    border-radius: $spaceXs;
+    &.-color-1 {
+        background-color: $color-primary;
+    }
+    &.-color-2 {
+        background-color: $color-secondary;
+    }
+    &.-color-3 {
+        background-color: $color-alert;
+    }
+    &.-color-4 {
+        background-color: #f5d265;
+    }
+    &.-color-5 {
+        background-color: $color-darkengrey;
+    }
+    &.-color-6 {
+        background-color: $color-darkgrey;
+    }
+    &.-color-7 {
+        background-color: $color-grey;
+    }
+    &.-color-8 {
+        background-color: $color-lightin;
+    }
+    @include mediaQueriesXs {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+// var & typo for manual
+$fontManual1: 'Ubuntu', sans-serif;
+$fontManual2: 'Hind', sans-serif;
+
+.a-manualTypoFont__one p {
+    font-family: $fontManual1;
+}
+.a-manualTypoFont__two p {
+    font-family: $fontManual2;
+}

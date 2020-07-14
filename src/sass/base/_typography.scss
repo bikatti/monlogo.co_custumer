@@ -135,6 +135,53 @@ li {
 .-uppercase {
     text-transform: uppercase;
 }
+.-textRight {
+    text-align: right;
+}
+.-textCenter {
+    text-align: center;
+}
+.-black {
+    font-weight: 900;
+}
+.-extraBold {
+    font-weight: 800;
+}
+.-bold {
+    font-weight: 700;
+}
+.-semiBold {
+    font-weight: 600;
+}
+.-medium {
+    font-weight: 500;
+}
+.-regular {
+    font-weight: 400;
+}
+.-light {
+    font-weight: 300;
+}
+.-extraLight {
+    font-weight: 200;
+}
+.-thin {
+    font-weight: 100;
+}
+.-italic {
+    font-style: italic;
+}
 .-center {
     text-align: center;
+}
+
+// color
+.-colorPrimary {
+    color: $color-primary;
+}
+.-colorSecondary {
+    color: $color-secondary;
+}
+.-colorAlert {
+    color: $color-alert;
 }

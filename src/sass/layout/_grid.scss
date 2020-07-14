@@ -42,6 +42,32 @@ a.-padModifier {
     }
 }
 
+// Margin & Padding Modifiers
+.-mAuto {
+    margin: auto;
+}
+.-mAutoRL {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.-mAutoLeft {
+    margin-left: auto;
+}
+.-mAutoRight {
+    margin-right: auto;
+    margin-left: $spaceXs;
+}
+.-mXsTop {
+    margin-top: $spaceXs;
+}
+.-mSmTop {
+    margin-top: $spaceSm;
+}
+.-mXsBottom {
+    margin-bottom: $spaceXs;
+}
+
+
 .a-noMargin {
     margin: 0 !important;
 }
@@ -86,8 +112,12 @@ section .a-paddingMd {
     }
 }
 
-section .-padSmBottom {
+section .-padSmBottom, .-padSmBottom {
     padding-bottom: $spaceSm !important;
+}
+
+.-padXsBottom {
+    padding-bottom: $spaceXs;
 }
 
 .-padRgBottom {
@@ -107,6 +137,13 @@ section .-padSmBottom {
 
 .-padRgTop {
     padding-top: $spaceRg;
+}
+.-padSmTop {
+    padding-top: $spaceSm;
+}
+
+.-padXsTop {
+    padding-top: $spaceXs;
 }
 
 .-containerText {
@@ -163,4 +200,44 @@ section .-padSmBottom {
     @include mediaQueriesSm {
         display: block;
     }
+}
+
+.-dFlex {
+    display: flex;
+}
+.-jCFlexEnd {
+    justify-content: flex-end;
+}
+
+// max-width
+.-m-w30 {
+    max-width: 30%;
+}
+.-m-w75 {
+    max-width: 75%;
+}
+.-m-w80 {
+    max-width: 80%;
+}
+.-m-w90 {
+    max-width: 90%;
+}
+.-m-w100 {
+    max-width: 100%;
+}
+
+.-w100 {
+    width: 100%;
+}
+.-w80 {
+    width: 80%;
+}
+.-w60 {
+    width: 60%;
+}
+.-w50 {
+    width: 50%;
+}
+.-w30 {
+    width: 30%;
 }
