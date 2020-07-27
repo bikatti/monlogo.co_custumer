@@ -1,0 +1,52 @@
+//- text
+section.o-textManual.-bg.-padBgBottom
+ .m-textManual.-ContainerBlog
+  .m-textManual__title
+   .m-text__customer
+    .m-text__linksBack.-mXsBottom
+     +textLinksBack(monlogoInternos[4],"🌌", "Componentes del website")
+     +textNoLinks("🔧", manualNames[4])
+    h1.a-text__header #{manualNames[4]}
+    .m-text__details
+     .a-arrowWierd
+     h3.a-text__textDetails #{atomic[1]}
+
+
+  article.m-text__blog
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Nombre
+    .m-text__div
+     p Este es el nombre que se le dará en el css y las clases para referirse a la molécula:
+     .-row.a-noMargin
+      .-col-12.-dFlex.-jCCenter
+       .m-codeCss
+        p .m-textAndImg .-textRight
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Descripción
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p Para ver cuanto miden cada breakpoints ir a #[a.-colorAlert.-medium(href=linksDev[0], target="_blank") medidas de breakpoints]
+    .m-text__div
+     p Estos elementos todos juntos forman una molécula, la cueles pueden ser utilizadas varias veces en diferente situaciones. Las imágenes de hablo son ejemplos de como se ven estas moléculas.
+     h3.-uppercase.-italic Desktop (breakpoints Xl y Lg)
+     .-row
+      .-col-12
+       +ImgTextContainer("", "-dFlex -jCCenter -LgImg -mAuto","", "", "assets/img/componentes/aboutus.png")
+
+    .m-text__div
+     h3.-uppercase.-italic Tablet (breakpoints Md, Sm)
+     .-row
+      .-col-12
+       +ImgTextContainer("", "-dFlex -jCCenter -LgImg -mAuto","", "", "assets/img/componentes/aboutus-1.png")
+    
+    .m-text__div
+     h3.-uppercase.-italic Teléfono (breakpoints Xs, Xxs, X0)
+     .-row
+      .-col-12
+       +ImgTextContainer("", "-dFlex -jCCenter -XsImg -mAuto","", "", "assets/img/componentes/aboutus-2.png")

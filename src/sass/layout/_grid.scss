@@ -23,6 +23,9 @@
 .-ContainerBlog {
     @extend .-ContainerUniversal;
     max-width: 60%;
+    @include mediaQueriesLg {
+        max-width: 69.66%;
+    }
     @include mediaQueriesMd {
         max-width: 89.66%;
     }
@@ -73,7 +76,7 @@ a.-padModifier {
 }
 
 section .a-noPadding {
-    padding: 0;
+    padding: 0 ;
 }
 
 section .a-paddingMd {
@@ -180,6 +183,9 @@ section .-padSmBottom, .-padSmBottom {
     &Calm {
         background-color: $color-calm;
     }
+    &Gradient {
+        background: linear-gradient(120deg, $color-alert 0%, $color-calm 100%);
+    }
 }
 
 // Display Show & Hide
@@ -208,10 +214,25 @@ section .-padSmBottom, .-padSmBottom {
 .-jCFlexEnd {
     justify-content: flex-end;
 }
+.-jCCenter {
+    justify-content: center;
+}
 
 // max-width
+.-m-wAu {
+    max-width: auto;
+}
 .-m-w30 {
     max-width: 30%;
+}
+.-m-w40 {
+    max-width: 40%;
+}
+.-m-w50 {
+    max-width: 50%;
+}
+.-m-w60 {
+    max-width: 60%;
 }
 .-m-w75 {
     max-width: 75%;
@@ -240,4 +261,59 @@ section .-padSmBottom, .-padSmBottom {
 }
 .-w30 {
     width: 30%;
+}
+
+// Grid
+.-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $spaceSm;
+    margin-bottom: $spaceSm;
+    .-col-1 {
+        width: 8.3333333333%;
+    }
+    .-col-2 {
+        width: 16.6666666666%;
+    }
+    .-col-3 {
+        width: 24.9999999999%;
+    }
+    .-col-4 {
+        width: 33.3333333332%;
+    }
+    .-col-5 {
+        width: 41.6666666665%;
+    }
+    .-col-6 {
+        width: 49.9999999998%;
+    }
+    .-col-7 {
+        width: 58.3333333331%;
+    }
+    .-col-8 {
+        width: 66.6666666664%;
+    }
+    .-col-9 {
+        width: 74.9999999997%;
+    }
+    .-col-10 {
+        width: 83.3333333333%;
+    }
+    .-col-11 {
+        width: 91.6666666663%;
+    }
+    .-col-12 {
+        width: 100%;
+    }
+    .-col-1, .-col-2, .-col-3, .-col-4, .-col-5, .-col-6,
+    .-col-7, .-col-8, .-col-9, .-col-10, .-col-11, .-col-12 {
+        padding: $spaceSm;
+    }
+    @include mediaQueriesSm {
+        .-col-1, .-col-2, .-col-3, .-col-4, .-col-5, .-col-6,
+        .-col-7, .-col-8, .-col-9, .-col-10, .-col-11, .-col-12 {
+            width: 100%;
+            padding: $spaceXs;
+        }
+    }
 }

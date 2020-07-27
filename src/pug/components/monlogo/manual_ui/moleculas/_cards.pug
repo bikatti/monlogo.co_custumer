@@ -1,0 +1,75 @@
+//- text
+section.o-textManual.-bg.-padBgBottom
+ .m-textManual.-ContainerBlog
+  .m-textManual__title
+   .m-text__customer
+    .m-text__linksBack.-mXsBottom
+     +textLinksBack(monlogoInternos[4],"🌌", "Componentes del website")
+     +textNoLinks("🔧", manualNames[2])
+    h1.a-text__header #{manualNames[2]}
+    .m-text__details
+     .a-arrowWierd
+     h3.a-text__textDetails #{atomic[1]}
+
+
+  article.m-text__blog
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Nombre
+    .m-text__div
+     p Este es el nombre que se le dará en el css y las clases para referirse al moléculas:
+     .-row.a-noMargin
+      .-col-12.-dFlex.-jCCenter
+       .m-codeCss
+        p .m-box
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Descripción
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p Para ver cuanto miden cada breakpoints ir a #[a.-colorAlert.-medium(href=linksDev[0], target="_blank") medidas de breakpoints]
+    .m-text__div
+     h3.-uppercase.-italic Desktop (breakpoints Xl y Lg)
+     .-row
+      .-col-12
+       +ImgTextContainer("", "-dFlex -jCCenter -LgImg -mAuto","", "-auto", "assets/img/componentes/cards.png")
+
+    .m-text__div
+     h3.-uppercase.-italic Tablet y Teléfono (breakpoints Md, Sm, Xs, Xxs, X0)
+     .-row
+      .-col-12
+       +ImgTextContainer("", "-dFlex -jCCenter -mAuto","", "-auto", "assets/img/componentes/cards-1.png")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Estados
+    .m-text__div
+     p Los estados de un átomo pueden variar como se comportará este cuando se encuentre en X situación. En este los estados que responderán será:
+     .-row
+      .-col-4
+       p → Default
+       +ImgTextContainer("", "-m-w80 -mAuto","", "", "assets/img/componentes/button_example.png")
+      .-col-4
+       p → :hover
+       +ImgTextContainer("", "-m-w80 -mAuto","", "", "assets/img/componentes/button_example_hover.png")
+      .-col-4
+       p → :active
+       +ImgTextContainer("", "-m-w80 -mAuto","", "", "assets/img/componentes/button_example_active.png")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Behavior
+    .m-text__div
+     p Las animaciones de este organismo será:
+     ul.m-listContent.-check.a-noPadding
+       li: p #[b.-regular.-colorAlert shadow-pop-br →] Esta animación será al inicio que carge la página, aplicada por separado a cada elemento.
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p Puedes conseguir está animación en está página: #[a.-colorAlert.-medium(href="https://animista.net/play/basic/shadow-pop/shadow-pop-br", target="-blank") Animatista]

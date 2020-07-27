@@ -13,16 +13,13 @@ nav.o-nav.sticky
     .a-brandMobile
      a(href=linksUrl[1]): img.a-brandMobile__Img(src=linksUrl[1]+logoResponsive[0], alt="Logo de monlogo")
     ul.m-itemContent__list
+     li: a.a-itemLink(href=linksUrl[1]) Inicio
      li.m-dropdownMenu
       a.a-itemLink.m-dropdownMenu__item(href="#") #{titles[2]} #[i.-arrowDown]
       ul
        li: a.a-itemLink(href=linksUrl[1]+linksInternos[1]) #{services[0]}
        li: a.a-itemLink(href=linksUrl[1]+linksInternos[2]) #{services[1]}
        li: a.a-itemLink(href=linksUrl[1]+linksInternos[3]) #{services[2]}
-     //- li: a.a-itemLink(href=linksExternos[0], target="_blank") #{titles[5]}
-     li: a.a-itemLink(href=monlogoInternos[2]) Ingresar
-     li: a.a-button.a-noMargin(href="mailto:"+linksExternos[1])
-      button.a-btn.-btnPrimary(type="button") #{titles[4]}
      //- li.-hide.-showMd
       h3 Subscríbete a nuestro newsletter
       +mailChimp("-footer", "", "-footer", "-btnFooter -btnMonlogo")

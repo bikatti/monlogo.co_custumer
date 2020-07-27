@@ -191,3 +191,15 @@
         }
     }
 }
+
+.m-backFooter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: $spaceBg;
+    margin-bottom: $spaceMd;
+    @include mediaQueriesSm {
+        margin-right: $spaceRg;
+        margin-bottom: $spaceRg;
+    }
+}

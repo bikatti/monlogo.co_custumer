@@ -76,15 +76,28 @@
         margin-top: $spaceXs;
         width: 100%;
     }
+    .a-text__img.-auto {
+        width: auto;
+    }
+    div.-LgImg {
+        max-width: auto;
+    }
+    div.-XsImg {
+        max-width: 400px;
+    }
     @include mediaQueriesXs { 
         .a-text__img {
             margin-left: 0;
+        }
+        div.-LgImg {
+            max-width: 100%;
         }
     }
 }
 .m-text__typo {
     p {
         font-size: $font01;
+        padding-bottom: 0;
     }
 }
 
@@ -103,6 +116,48 @@
         }
     }
 }
+.m-text__alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $spaceXs;
+    border-radius: 4px;
+    background-color: $color-lightin;
+    box-shadow: 6px 6px $color-alert;
+    border: 1px solid $color-primary;
+    margin-bottom: $spaceRg;
+    .a-text__alert {
+        margin: $spaceXs;
+    }
+    .-iconAlerts {
+        position: relative;
+        top: -3px;
+        font-size: 20px;
+    }
+}
+.m-text__div {
+    margin-bottom: $spaceSm;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.m-codeCss {
+    padding: 4px $spaceXs ;
+    background-color: $color-lightin;
+    border: 1px solid $color-lightgrey;
+    border-radius: 3px;
+    max-width: 230px;
+    display: flex;
+    justify-content: center;
+    p {
+        padding-bottom: 0;
+        color: $color-alert;
+    }
+    @include mediaQueriesSm {
+        max-width: 100%;
+    }
+}
 
 .m-text__paletteColor {
     display: flex;
@@ -111,6 +166,9 @@
 .m-text__infoColor {
     display: flex;
     flex-direction: row;
+    p {
+        padding-bottom: 0;
+    }
     .m-text__columnColor {
         margin-right: $spaceSm;
         &:last-child {
@@ -124,6 +182,7 @@
         }
     }
 }
+
 .m-squareColor {
     width: 55px;
     height: 55px;
@@ -153,6 +212,13 @@
     &.-color-8 {
         background-color: $color-lightin;
     }
+    &.-color-9 {
+        background-color: $color-calm;
+    }
+    &.-color-10 {
+        background-color: $bg;
+        border: 2px solid $color-grey;
+    }
     @include mediaQueriesXs {
         width: 60px;
         height: 60px;
@@ -168,4 +234,32 @@ $fontManual2: 'Hind', sans-serif;
 }
 .a-manualTypoFont__two p {
     font-family: $fontManual2;
+}
+
+// links
+.m-text__linksBack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .m-linksBack {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .-nolinksText {
+        padding-left: $spaceXs;
+        padding-right: $spaceXs;
+        text-overflow: ellipsis;
+        // max-width: 220px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    @include mediaQueriesXs {
+        .m-linksBack {
+            padding-bottom: 5px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
 }

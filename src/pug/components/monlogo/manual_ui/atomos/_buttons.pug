@@ -1,0 +1,100 @@
+//- text
+section.o-textManual.-bg.-padBgBottom
+ .m-textManual.-ContainerBlog
+  .m-textManual__title
+   .m-text__customer
+    .m-text__linksBack.-mXsBottom
+     +textLinksBack(monlogoInternos[4],"🌌", "Componentes del website")
+     +textNoLinks("🔧", manualNames[0])
+    h1.a-text__header #{manualNames[0]}
+    .m-text__details
+     .a-arrowWierd
+     h3.a-text__textDetails #{atomic[0]}
+
+
+  article.m-text__blog
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Nombre
+    .m-text__div
+     p Este es el nombre que se le dará en el css y las clases para referirse al átomo (elemento), en este caso contaremos con tres tipos de botones, sus nombres serán:
+     .-row
+      .-col-4
+       .m-codeCss
+        p .a-btn .-btnPrimary
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-primary.png")
+      .-col-4
+       .m-codeCss
+        p .a-btn .-btnSecondary
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-secondary.png")
+      .-col-4
+       .m-codeCss
+        p .a-btn .-btnAlert
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-alert.png")
+      .-col-4
+       .m-codeCss
+        p .a-btn .-btnMonlogo
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-monlogo.png")
+     p El botón de la firma de Monlogo es igual al botón #[b.-medium .-btnSecondary] lo único que puede variar en su separación y tamaño de la caja.
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Descripción
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p Para ver cuanto miden cada breakpoints ir a #[a.-colorAlert.-medium(href=linksDev[0], target="_blank") medidas de breakpoints]
+    .m-text__div
+     h3.-uppercase.-italic Desktop (breakpoints Xl y Lg)
+     .-row
+      .-col-4
+       .m-codeCss
+        p .-btnPrimary
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-primary.png")
+      .-col-4
+       .m-codeCss
+        p .-btnSecondary
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-secondary.png")
+      .-col-4
+       .m-codeCss
+        p .-btnAlert
+       +ImgTextContainer("", "-m-w50 -mAuto","", "", "assets/img/componentes/button-alert.png")
+     
+    .m-text__div
+     h3.-uppercase.-italic Tablet y Teléfono (breakpoints Md, Sm, Xs, Xxs, X0)
+     .-row
+      .-col-4
+       .m-codeCss
+        p .-btnPrimary
+       +ImgTextContainer("", "-m-w40 -mAuto","", "", "assets/img/componentes/button-primary-1.png")
+      .-col-4
+       .m-codeCss
+        p .-btnSecondary
+       +ImgTextContainer("", "-m-w40 -mAuto","", "", "assets/img/componentes/button-secondary-1.png")
+      .-col-4
+       .m-codeCss
+        p .-btnAlert
+       +ImgTextContainer("", "-m-w40 -mAuto","", "", "assets/img/componentes/button-alert-1.png")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Estados
+    p.-mXsBottom Los estados de un átomo pueden variar como se comportará este cuando se encuentre en X situación. En este los estados que responderán será:
+    .m-text__div
+     .-row
+      .-col-4
+       p → Default
+       +ImgTextContainer("", "-m-w80 -mAuto","", "", "assets/img/componentes/button_example.png")
+      .-col-4
+       p → :hover
+       +ImgTextContainer("", "-m-w80 -mAuto","", "", "assets/img/componentes/button_example_hover.png")
+      .-col-4
+       p → :active
+       +ImgTextContainer("", "-m-w80 -mAuto","", "", "assets/img/componentes/button_example_active.png")
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p En este caso se quiere imitar la manera en que reaccionan los botones en #[a.-colorAlert.-medium(href="https://florencebymills.com/", target="-blank") florencebymills.com] que tienen los botones

@@ -29,7 +29,7 @@
     }
     &Left {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 53% auto;
         grid-gap: 0 $spaceXs;
         grid-template-areas: "explainContent explainImg";
     }

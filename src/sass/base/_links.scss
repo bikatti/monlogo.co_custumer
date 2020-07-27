@@ -8,7 +8,7 @@ a {
 }
 
 .a-itemLink {
-    font-size: $fontSM2;
+    font-size: $font01;
     font-weight: 600;
     color: $color-darkengrey;
     &:hover {
@@ -20,6 +20,33 @@ a {
     @include mediaQueriesMd {
         font-size: $fontS3;
     }
+}
+
+.-linksText {
+    // @extend .-colorAlert;
+    font-size: $font01;
+    border-bottom: 1px solid $color-grey;
+    margin-left: $spaceXs;
+    @include mediaQueriesMd {
+        font-size: $fontSM2;
+    }
+}
+.-linksTextHover {
+    padding-left: $spaceXs;
+    padding-right: $spaceXs;
+    border-radius: 4px;
+    transition: background 120ms ease-in 0s;
+    text-overflow: ellipsis;
+    // max-width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    &:hover {
+        background: $color-lightgrey;
+    }
+}
+.-iconLinks {
+    font-size: $fontS2;
+    margin-right: 3px;
 }
 
 .faq-list a {

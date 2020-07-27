@@ -51,7 +51,7 @@ mixin ImgTextContainer(w, container, text, c, img)
  div(class="m-text__img "+w)
   h3.-uppercase.-italic.-padXsBottom=text
   div(class=""+container)
-   img(class="a-text__img -mXsBottom "+c, src=linksUrl[1]+""+img, alt=""+text)
+   img(class="-mXsBottom a-text__img "+c, src=linksUrl[1]+""+img, alt=""+text)
 
 mixin TypoTextContainer(w, title, peso)
  div(class="m-text__typo -mSmTop "+w)
@@ -71,3 +71,22 @@ mixin colorContainer(w,color,h,rgb,cmyk,hsl,pantone)
    div(class="m-text__columnColor")
     p(class="-uppercase -medium") hsl #{hsl}
     p(class="-uppercase -medium") pantone #{pantone}
+
+mixin textLinksBack(a, icon, p)
+ .m-linksBack
+  a(href=""+a): p.-linksTextHover #[span.-iconLinks #{icon}] #{p}
+  span /
+
+mixin textNoLinks(icon, p)
+ .m-linksBack
+  p.-nolinksText #[span.-iconLinks #{icon}] #{p}
+
+mixin typoUI(H1W,H1,H2W,H2,H3W,H3,mW,m,pW,p,smW,s,spW,sp)
+ ul.m-linksList.-mXsTop
+  li: h3 H1 → #[b.-medium #{H1W}] → #{H1}px
+  li: h3 H2 → #[b.-medium #{H2W}] → #{H2}px
+  li: h3 H3 → #[b.-medium #{H3W}] → #{H3}px
+  li: h3 menú → #[b.-medium #{mW}] → #{m}px
+  li: h3 Párrafo → #[b.-medium #{pW}] → #{p}px
+  li: h3 Small → #[b.-medium #{smW}] → #{s}px
+  li: h3 Span → #[b.-medium #{spW}] → #{sp}px

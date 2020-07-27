@@ -1,29 +1,30 @@
 section.o-packs.-index.-bg.-padBgBottom.-padSmTop
- h2.a-textAndImg__title.a-component__text Nuestros paquetes son
+ .-ContainerUniversal
+  h2.a-textAndImg__title.a-component__text Elige un paquete e inicia tu transformación digital
  .o-packs__content.-ContainerUniversal
   .m-packs__imgBg
    .a-packs__img
     img(src=linksUrl[1]+"assets/img/identidad_corporativa/mockup_idc_pack.png")
     .a-packs__alt.-dFlex.-padSmTop.-textRight
-     h3 Imagen de los entregables del paquete Identidad corporativa + tarjeta de presentación
+     h3 Imagen de los entregables del paquete de #{services[0]} + Tarjeta de presentación
 
   .m-packs__cards
    .m-packsbox
     .m-pack
-     +pack__hero("Identidad corporativa", "Básico", "assets/img/icons/idc_pack_1.svg", "-smaller")
+     +pack__hero(services[0], "Básico", "assets/img/icons/idc_pack_1.svg", "-smaller")
      .m-pack__text
-      p Un logotipo + manual de identidad corporativa para dar inicio a la transformación digital de tu negocio
+      p Un logotipo + manual de identidad gráfica para dar inicio a la transformación digital de tu negocio
      ol.m-pack__list.m-listContent.-check
       li.a-packItemList Logotipo
-      li.a-packItemList Manual de identidad corporativa
+      li.a-packItemList Manual de #{services[0]}
       li.a-packItemList Banner para redes sociales
 
     .m-pack
-     +pack__hero("Identidad corporativa + tarjeta de presentación", "Profesional", "assets/img/icons/idc_pack_2.svg", "-normal")
+     +pack__hero(services[0]+" + tarjeta de presentación", "Profesional", "assets/img/icons/idc_pack_2.svg", "-normal")
      .m-pack__text
       p Incluye el paquete básico + una tarjeta de presentación para combinación clave
      ol.m-pack__list.m-listContent.-check
       li.a-packItemList Logotipo
-      li.a-packItemList Manual de identidad corporativa
+      li.a-packItemList Manual de #{services[0]}
       li.a-packItemList Banner para redes sociales
       li.a-packItemList Tarjeta de presentación

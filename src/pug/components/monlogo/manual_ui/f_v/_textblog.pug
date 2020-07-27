@@ -1,0 +1,88 @@
+section.o-textManual.-bg.-padBgBottom
+ .m-textManual.-ContainerBlog
+  .m-textManual__title
+   .m-text__icon
+    img.a-textManual__icon(src=linksUrl[1]+logoResponsive[1], alt="")
+   .m-text__customer
+    .m-text__linksBack.-mXsBottom
+     +textLinksBack(monlogoInternos[1],"🌌", "Manual diseño programación")
+     +textNoLinks("🔧", "Fundaciones y variables")
+    h1.a-text__header Fundaciones y variables
+    .m-text__details
+     .a-arrowWierd
+     h3.a-text__textDetails Manual del diseño para programación
+
+
+  article.m-text__blog
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Breakpoints
+    .m-textContent.-gridGapXs
+     .m-columnOne
+      p Los breakpoints son variables que se definen según los anchos de los dispositivos en los que se quiere que se visualice la página web, la unidad en que se definen los breakpoints es pixeles.  Estas variables le indican a los media queries cuando realizan la adaptación del contenido del sitio web a las características y resolución de la pantalla de cada dispositivo.
+
+     .m-columnTwo
+      ul.m-linksList
+       li: a.-medium.-dFlex(href=linksDev[0], target="_blank") 📖 #[b.-linksText Breakpoints]
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Tipografía
+    .m-textContent
+     .m-columnOne
+      h3.-uppercase.-italic.-padXsBottom Tipografía principal
+      p Para los headings (H1, H2, H3) y párrafos hemos seleccionado #{typoManual[0]}
+      ul.m-linksList.-mXsTop
+       li: a.-medium.-dFlex(href=linksfont[0], target="_blank") 🅰 #[b.-linksText #{typoManual[0]}]
+      h3.-uppercase.-italic.-mSmTop Tamaños y Características en Desktop (Breakpoints Xl y Lg)
+      +typoUI("bold","45","bold","30","medium","18","medium","18","regular","18","regular","12","regular","12")
+
+     .m-columnTwo
+      h3.-uppercase.-italic.-padXsBottom Tipografía secundaria
+      p La tipografía secondaria la utilizaremos para resaltar o usar Italic usaremos #{typoManual[1]}
+      ul.m-linksList.-mXsTop
+       li: a.-medium.-dFlex(href=linksfont[1], target="_blank") 🅰 #[b.-linksText #{typoManual[1]}]
+      h3.-uppercase.-italic.-mSmTop Tamaños y Características en Tablet (Breakpoints Md, Sm) y Teléfono (Breakpoints Xs, Xxs y X0)
+      +typoUI("bold","35","bold","25","medium","18","medium","16","regular","14","regular","12","regular","12")
+
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Colores del website
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p Evita usar colores muy contrastantes como el negro y el blanco, igualmente no utilices negro y blanco puro.
+    .m-textContent
+     .m-columnOne
+      h3.-uppercase.-italic Paleta de colores principal
+      +colorContainer("","1","#2e279d", "46, 39, 157","93%, 95%, 0%, 0%", "242°, 74%, 61%","2746 C")
+      +colorContainer("","2","#46b3e6", "70, 179, 230","88%, 3%, 11, 0%", "199°, 69%, 90%","279 C")
+      +colorContainer("","3","#0779e4", "7, 121, 228 ","92%, 51%, 0%, 18%", "208°, 96%, 89%","3005 C")
+      +colorContainer("","9","#ceddef", "206, 221, 229","27%, 10%, 4%, 0%", "211°, 13%, 93% ","2707 C")
+      h3.-uppercase.-italic.-mSmTop Color para backgrounds
+      +colorContainer("","10","#eff4f9", "239, 244, 249","4%, 2%, 0%, 2%", "210°, 50%, 96%","656 C")
+     .m-columnTwo
+      h3.-uppercase.-italic Paleta de colores en grises
+      +colorContainer("","5","#39383B", "57, 56, 59","3%, 5%, 0%, 77%", "260°, 3%, 23%","426 C")
+      +colorContainer("","6","#76737B", "118, 115, 123","4%, 7%, 0%, 52%", "270°, 3%, 46%","Cool Gray 10 C")
+      +colorContainer("","7","#BAB7C1", "186, 183, 193","4%, 5%, 0%, 24%", "252°, 8%, 74%","2746 C")
+      +colorContainer("","8","#fefefe", "254, 254, 254","0%, 0%, 0%, 0%", "0°, 0%, 100%","white")
+   .m-text__section
+    .m-text__sectionHeader
+     .m-text__sectionHeaderText
+      h3.a-text__title.-uppercase.-italic Layout - Spaces
+    .m-textContent
+     .m-columnOne
+      p Layout determina como van a estar distribuidos nuestros elementos en la pagina. (Ej: Sidebar a la derecha, Títulos, descripción de la pagina, etc.) y además debemos tener en cuenta el espaciado entre los elementos.
+
+     .m-columnTwo
+      h3.-uppercase.-italic.-padXsBottom Espacios de variables
+      ul.m-linksList.-mXsTop
+       li #[b.-medium $spaceBg:] #{spacesWeb[0]}
+       li #[b.-medium $spaceMd:] #{spacesWeb[1]}
+       li #[b.-medium $spaceRg:] #{spacesWeb[2]}
+       li #[b.-medium $spaceSm:] #{spacesWeb[3]}
+       li #[b.-medium $spaceXs:] #{spacesWeb[4]}

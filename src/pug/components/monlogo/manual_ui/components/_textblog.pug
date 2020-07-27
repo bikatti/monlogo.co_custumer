@@ -1,0 +1,79 @@
+section.o-textManual.-bg.-padBgBottom
+ .m-textManual.-ContainerBlog
+  .m-textManual__title
+   .m-text__icon
+    img.a-textManual__icon(src=linksUrl[1]+logoResponsive[1], alt="")
+   .m-text__customer
+    .m-text__linksBack.-mXsBottom
+     +textLinksBack(monlogoInternos[1],"🌌", "Manual diseño programación")
+     +textNoLinks("🔩", "Componentes del website")
+    h1.a-text__header Componentes del website
+    .m-text__details
+     .a-arrowWierd
+     h3.a-text__textDetails Manual del diseño para programación
+
+
+  article.m-text__blog
+   .m-text__section
+    .m-textContent.-gridGapXs
+     .m-columnOne
+      p Nuestra métodología para crear componentos para nuestro diseño UI es el #[b.-medium.-italic Diseño atómico], este constanta de 5 niveles de componentes los cuáles son: #[b.-bold.-italic átomos] son los componentes básicos como los botones, las #[b.-bold.-italic moléculas] consiste en la combinación de átomos, #[b.-bold.-italic organismo] están compuestos por las moléculas con los que hacemos bloques al unirlos, los #[b.-bold.-italic template] consisten en agrupaciones de organismos unidos y #[b.-bold.-italic páginas] son son las mismas plantillas pero con la sustitución de algunos elementos que sean representativos de lo que el usuario final verá.
+
+     .m-columnTwo
+      p Los componentes deben tener:
+      ul.m-listContent.-check.a-noPadding
+       li: p Nombre
+       li: p Descripción/Solución
+       li: p Behavior (comportamiento del componente con su entorno) en PC y Mobile
+       li: p Estados de componente (prendido/apagado, "modo navideño")
+    .-padRgTop.m-text__img
+     .-m-w75.-mAuto
+      img(class="a-text__img -mXsBottom", src="https://miro.medium.com/max/600/1*-EpDbcdrdn_sgz5AbRAHFw.gif", alt="")
+
+   .m-text__section
+    .m-textContent
+     .m-columnOne
+      .m-text__sectionHeader
+       .m-text__sectionHeaderText
+        h3.a-text__title.-uppercase.-italic #{atomic[0]}
+      ul.m-linksList
+       li: a.-medium.-dFlex(href=monlogoInternos[5]) 📖 #[b.-linksText #{manualNames[0]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[6]) 📖 #[b.-linksText #{manualNames[1]}]
+      
+      .m-text__sectionHeader.-padSmTop
+       .m-text__sectionHeaderText
+        h3.a-text__title.-uppercase.-italic #{atomic[1]}
+      ul.m-linksList
+       li: a.-medium.-dFlex(href=monlogoInternos[7]) 📖 #[b.-linksText #{manualNames[2]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[8]) 📖 #[b.-linksText #{manualNames[3]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[9]) 📖 #[b.-linksText #{manualNames[4]}]
+
+      .m-text__sectionHeader.-padSmTop
+       .m-text__sectionHeaderText
+        h3.a-text__title.-uppercase.-italic #{atomic[2]}
+      ul.m-linksList
+       li: a.-medium.-dFlex(href=monlogoInternos[10]) 📖 #[b.-linksText #{manualNames[5]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[11]) 📖 #[b.-linksText #{manualNames[6]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[12]) 📖 #[b.-linksText #{manualNames[7]} - #{pageName[0]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[13]) 📖 #[b.-linksText #{manualNames[8]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[17]) 📖 #[b.-linksText #{manualNames[13]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[14]) 📖 #[b.-linksText #{manualNames[9]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[15]) 📖 #[b.-linksText #{manualNames[10]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[16]) 📖 #[b.-linksText #{manualNames[11]} & #{manualNames[12]}]
+
+     .m-columnTwo
+      .m-text__sectionHeader
+       .m-text__sectionHeaderText
+        h3.a-text__title.-uppercase.-italic #{atomic[3]}
+      
+      h3.-uppercase.-italic.-mSmTop #{pageName[0]}
+      ul.m-linksList.-padXsTop
+       li: a.-medium.-dFlex(href=monlogoInternos[10]) 📖 #[b.-linksText #{manualNames[5]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[12]) 📖 #[b.-linksText #{manualNames[7]} - #{pageName[0]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[11]) 📖 #[b.-linksText #{manualNames[6]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[13]) 📖 #[b.-linksText #{manualNames[8]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[14]) 📖 #[b.-linksText #{manualNames[9]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[15]) 📖 #[b.-linksText #{manualNames[10]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[16]) 📖 #[b.-linksText #{manualNames[11]} & #{manualNames[12]}]
+       li: a.-medium.-dFlex(href=monlogoInternos[17]) 📖 #[b.-linksText #{manualNames[13]}]
+

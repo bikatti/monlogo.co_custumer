@@ -1,15 +1,13 @@
-.o-componentsService {
+.o-components {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.m-components {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.m-components__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
 }
 
 .m-component {
