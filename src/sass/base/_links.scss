@@ -44,6 +44,35 @@ a {
         background: $color-lightgrey;
     }
 }
+.-target {
+    &::after {
+        display: block;
+        width: 18px;
+        position: absolute;
+        right: $spaceXs;
+        content: url('../img/icons/external.svg');
+    }
+}
+.-targetText {
+    &::after {
+        display: inline-flex;
+        position: relative;
+        top: 3px;
+        margin-left: 5px;
+        width: $spaceSm;
+        content: url('../img/icons/external_sec.svg');
+    }
+}
+.-download {
+    &::after {
+        display: block;
+        width: 18px;
+        position: absolute;
+        right: $spaceXs;
+        content: url('../img/icons/download.svg');
+    }
+}
+
 .-iconLinks {
     font-size: $fontS2;
     margin-right: 3px;

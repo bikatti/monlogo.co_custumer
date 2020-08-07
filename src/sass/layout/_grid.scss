@@ -5,18 +5,15 @@
     margin-right: auto;
     padding: 10px 10px 5px;
     box-sizing: border-box;
-    &.-bigger {
-        max-width: 98%;
-    }
     @include mediaQueriesLg {
         max-width: 89.66%;
     }
     @include mediaQueriesSm {
-        padding: 10px;
+        padding: 4px;
     }
     @include mediaQueries0 {
         padding: 0;
-        max-width: 86%;
+        max-width: 89%;
     }
 }
 
@@ -69,7 +66,20 @@ a.-padModifier {
 .-mXsBottom {
     margin-bottom: $spaceXs;
 }
-
+.-mSmBottom {
+    margin-bottom: $spaceSm;
+}
+.-mRgTop {
+    margin-top: $spaceRg;
+}
+.-mRgBottom {
+    margin-bottom: $spaceRg;
+}
+.-mSmSmBottom {
+    @include mediaQueriesSm {
+        margin-bottom: $spaceSm;
+    }
+}
 
 .a-noMargin {
     margin: 0 !important;
@@ -148,6 +158,12 @@ section .-padSmBottom, .-padSmBottom {
 .-padXsTop {
     padding-top: $spaceXs;
 }
+.-pad0Left {
+    padding-left: 0 !important;
+}
+.-pad0Rigth  {
+    padding-right: 0 !important;
+}
 
 .-containerText {
     margin-bottom: $spaceSm;
@@ -164,6 +180,10 @@ section .-padSmBottom, .-padSmBottom {
     display: inline;
 }
 
+// Position
+.-pRelative {
+    position: relative;
+}
 .-alignItemsLeft {
     align-items: left !important;
 }
@@ -184,7 +204,7 @@ section .-padSmBottom, .-padSmBottom {
         background-color: $color-calm;
     }
     &Gradient {
-        background: linear-gradient(120deg, $color-alert 0%, $color-calm 100%);
+        background: linear-gradient(240deg, $bg 0%, $color-calm 100%);
     }
 }
 
@@ -194,6 +214,11 @@ section .-padSmBottom, .-padSmBottom {
 }
 .-hideSm {
     @include mediaQueriesSm {
+        display: none;
+    }
+}
+.-hideMd {
+    @include mediaQueriesMd {
         display: none;
     }
 }
@@ -313,7 +338,7 @@ section .-padSmBottom, .-padSmBottom {
         .-col-1, .-col-2, .-col-3, .-col-4, .-col-5, .-col-6,
         .-col-7, .-col-8, .-col-9, .-col-10, .-col-11, .-col-12 {
             width: 100%;
-            padding: $spaceXs;
+            padding: 0;
         }
     }
 }

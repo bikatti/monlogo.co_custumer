@@ -18,13 +18,10 @@ section.o-textManual.-bg.-padBgBottom
     .m-text__sectionHeader
      .m-text__sectionHeaderText
       h3.a-text__title.-uppercase.-italic Descripción
-    .m-text__alert
-     .a-text__alert #[span.-iconAlerts 💡]
-     .m-text__warning
-      p Para ver cuanto miden cada breakpoints ir a #[a.-colorAlert.-medium(href=linksDev[0], target="_blank") medidas de breakpoints]
+    +breakpoints()
     .m-text__div
-     p Los textos no tienen una clase ni nombre especifico. Estás son las variacones de tamaño y tipo de texto que hay en la página. Las tipografías elegidas para el website son:
-     p Para los headings (H1, H2, H3) y párrafos la tipografía es #[a.-colorAlert.-medium(href=linksfont[0], target="_blank") Hind], y para resaltar un texto o usar Italic usaremos #[a.-colorAlert.-medium(href=linksfont[1], target="_blank") Raleway]
+     p Los textos no tienen una clase ni nombre específico. Estas son las variaciones de tamaño y tipo de texto que hay en la página.
+     p Las tipografías elegidas para el website son: para los headings (H1, H2, H3), para párrafos la tipografía es #[a.-colorAlert.-medium.-targetText(href=linksfont[0], target="_blank") Hind], y para resaltar un texto o usar Italic usaremos #[a.-colorAlert.-medium.-targetText(href=linksfont[1], target="_blank") Raleway]
      h3.-uppercase.-italic Desktop (breakpoints Xl y Lg)
      .-row
       .-col-12
@@ -41,7 +38,7 @@ section.o-textManual.-bg.-padBgBottom
      .m-text__sectionHeaderText
       h3.a-text__title.-uppercase.-italic Estados
     .m-text__div
-     p Los estados de un átomo pueden variar como se comportará este cuando se encuentre en X situación. En este caso, los textos normalmente no tienen ningún tipo de estado, pero si pueden tener decoraciones, en este caso estas son:
+     p Un átomo puede variar, de acuerdo al comportamiento o behavior que se defina para una situación específica. Los estados de un átomo indican como lucirá éste para cada situación. No obstante, los textos normalmente no tienen ningún tipo de estado, pero si pueden tener decoraciones. Para este caso serán:
      .-row
       .-col-4
        .m-codeCss

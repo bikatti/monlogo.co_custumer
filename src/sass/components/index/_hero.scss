@@ -11,16 +11,16 @@
 
 .m-heroContent {
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-areas: "textHero" "imgHero";
+    grid-template-columns: 48% auto;
+    grid-template-areas: "textHero imgHero";
+    grid-gap: $spaceSm;
     @include mediaQueriesMd {
         grid-template-rows: 1fr auto;
+        grid-template-columns: auto;
         grid-template-areas: "textHero" "imgHero";
         justify-content: center;
     }
 }
-
-
 
 .m-heroContent__text {
     grid-area: textHero;
@@ -37,33 +37,12 @@
     h1 {
         color: $color-primary;
     }
-    @include mediaQueriesXs {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    @include mediaQueriesMd {
         h1 {
             text-align: center;
         }
     }
-    @include mediaQueriesXxs {
-        max-width: 100%;
-    }
 }
-
-.a-heroContent__text {
-    max-width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    line-height: 1.27;
-    @include mediaQueriesMd {
-        max-width: 80%;
-    }
-    @include mediaQueriesXs {
-        max-width: 98%;
-    }
-}
-
-// .a-heroContent__button
 
 .m-heroContent__img {
     grid-area: imgHero;
@@ -73,5 +52,29 @@
         width: 100%;
         position: relative;
         z-index: 1;
+    }
+}
+
+.m-underline {
+    color: $bg;
+    position: absolute;
+    overflow: hidden;
+    transform: translateZ(0);
+    z-index: 2;
+    right: 0;
+    &.-shapeBottom {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        margin-bottom: -1px;
+    }
+    &.-shapeLine {
+        min-height: 19px;
+    }
+    svg {
+        display: block;
+        fill: $bg;
+        pointer-events: none;
+        overflow: hidden;
     }
 }

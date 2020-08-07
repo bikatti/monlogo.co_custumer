@@ -1,8 +1,6 @@
 section.o-textManual.-bg.-padBgBottom
  .m-textManual.-ContainerBlog
   .m-textManual__title
-   .m-text__icon
-    img.a-textManual__icon(src=linksUrl[1]+logoResponsive[1], alt="")
    .m-text__customer
     .m-text__linksBack.-mXsBottom
      +textLinksBack(monlogoInternos[1],"🌌", "Manual diseño programación")
@@ -17,18 +15,18 @@ section.o-textManual.-bg.-padBgBottom
    .m-text__section
     .m-textContent.-gridGapXs
      .m-columnOne
-      p Nuestra métodología para crear componentos para nuestro diseño UI es el #[b.-medium.-italic Diseño atómico], este constanta de 5 niveles de componentes los cuáles son: #[b.-bold.-italic átomos] son los componentes básicos como los botones, las #[b.-bold.-italic moléculas] consiste en la combinación de átomos, #[b.-bold.-italic organismo] están compuestos por las moléculas con los que hacemos bloques al unirlos, los #[b.-bold.-italic template] consisten en agrupaciones de organismos unidos y #[b.-bold.-italic páginas] son son las mismas plantillas pero con la sustitución de algunos elementos que sean representativos de lo que el usuario final verá.
+      p Nuestra método para crear componentes para nuestro diseño UI es el #[b.-medium.-italic Diseño atómico], este consta de 5 niveles: los #[b.-bold.-italic átomos] que son los componentes básicos, como los botones; las #[b.-bold.-italic moléculas] que consiste en la combinación de átomos; los #[b.-bold.-italic organismo] están compuestos por las moléculas y que al unirse forman bloques; los #[b.-bold.-italic template] que consisten en agrupaciones de organismos unidos; y #[b.-bold.-italic páginas] son son las mismas plantillas pero con la sustitución de algunos elementos que sean representativos de lo que el usuario final verá.
 
      .m-columnTwo
       p Los componentes deben tener:
       ul.m-listContent.-check.a-noPadding
        li: p Nombre
        li: p Descripción/Solución
-       li: p Behavior (comportamiento del componente con su entorno) en PC y Mobile
+       li: p Behavior (comportamiento del componente con su entorno) en desktop y teléfono
        li: p Estados de componente (prendido/apagado, "modo navideño")
     .-padRgTop.m-text__img
      .-m-w75.-mAuto
-      img(class="a-text__img -mXsBottom", src="https://miro.medium.com/max/600/1*-EpDbcdrdn_sgz5AbRAHFw.gif", alt="")
+      img(class="a-text__img -mXsBottom", src="https://miro.medium.com/max/600/1*-EpDbcdrdn_sgz5AbRAHFw.gif", alt="Gif animado del Atomic design UI")
 
    .m-text__section
     .m-textContent
@@ -77,3 +75,6 @@ section.o-textManual.-bg.-padBgBottom
        li: a.-medium.-dFlex(href=monlogoInternos[16]) 📖 #[b.-linksText #{manualNames[11]} & #{manualNames[12]}]
        li: a.-medium.-dFlex(href=monlogoInternos[17]) 📖 #[b.-linksText #{manualNames[13]}]
 
+   .o-nextLink
+    +relatedLink("", monlogoInternos[1], "🌌 Manual diseño programación")
+    +nextUpLink("", monlogoInternos[3], "🔧 Fundaciones y variables")

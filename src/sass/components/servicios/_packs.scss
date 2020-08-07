@@ -154,3 +154,28 @@
         opacity: 1;
     }
 }
+
+.m-text__alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $spaceSm;
+    border-radius: 4px;
+    background-color: $color-lightin;
+    box-shadow: 6px 6px $color-alert;
+    border: 1px solid $color-primary;
+    margin-bottom: $spaceRg;
+    max-width: 80%;
+    margin: $spaceSm auto 0 auto;
+    .a-text__alert {
+        margin-right: $spaceXs;
+    }
+    .-iconAlerts {
+        position: relative;
+        top: -3px;
+        font-size: 20px;
+    }
+    @include mediaQueriesXs {
+        max-width: 92%;
+    }
+}

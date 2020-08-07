@@ -2,45 +2,95 @@
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
+    @include mediaQueriesXs {
+        padding-top: 0;
+    }
 }
 
 .m-components__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0;
+    @include mediaQueriesLg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mediaQueriesXs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: $spaceXs 0;
+    }
 }
 
 .m-component {
-    max-width: 200px;
-    margin-right: $spaceRg;
-    margin-left: $spaceRg;
-    &:first-child {
-        margin-left: 0;
+    padding: $spaceSm $spaceSm;
+    &.-one {
+        border-left: 1px solid transparent;
+        border-top: 1px solid transparent;
     }
-    &:last-child {
-        margin-right: 0;
+    &.-two {
+        border-left: 1px solid $color-grey;
+        border-top: 1px solid transparent;
+    }
+    &.-three {
+        border-left: 1px solid $color-grey;
+        border-top: 1px solid transparent;
+    }
+    &.-four {
+        border-left: 1px solid transparent;
+        border-top: 1px solid $color-grey;
+    }
+    &.-five {
+        border-left: 1px solid $color-grey;
+        border-top: 1px solid $color-grey;
+    }
+    &.-six {
+        border-left: 1px solid $color-grey;
+        border-top: 1px solid $color-grey;
     }
     @include mediaQueriesLg {
-        margin-bottom: $spaceSm;
-        &:first-child {
-            margin-left: $spaceRg;
+        &.-three {
+            border-left: 1px solid transparent;
+            border-top: 1px solid $color-grey;
         }
-        &:last-child {
-            margin-right: $spaceRg;
+        &.-four {
+            border-left: 1px solid $color-grey;
         }
-    }
-    @include mediaQueriesMd {
-        margin-bottom: $spaceRg;
+        &.-five {
+            border-left: 1px solid transparent;
+        }
     }
     @include mediaQueriesXs {
-        margin-right: 0;
-        margin-left: 0;
-        &:first-child {
-            margin-left: 0;
+        &.-borderNone {
+            border: none;
         }
-        &:last-child {
-            margin-right: 0;
-            margin-bottom: 0;
+    }
+}
+.m-component__icon {
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+    img {
+        max-width: 100%;
+    }
+}
+.m-component__title {
+    margin: $spaceXs 0;
+    text-align: center;
+}
+
+.m-content__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2, h3 {
+        text-align: center;
+    }
+    .a-categoriestitle__text {
+        padding-top: $spaceXs;
+        max-width: 76%;
+    }
+    @include mediaQueriesMd {
+        .a-categoriestitle__text {
+            max-width: 100%;
         }
     }
 }

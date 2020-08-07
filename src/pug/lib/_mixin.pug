@@ -18,7 +18,13 @@ mixin pack__hero(title, sub, img, w)
     .a-arrowWierd
     span.a-textAndImg__subtitleText=sub
   div(class="m-pack__img "+w)
-   img(src=linksUrl[1]+img, alt="icono "+title)
+   img(src=linksUrl[1]+img, alt="Icono de "+title)
+
+mixin card__thing(img,t,p)
+ .m-component__icon
+  img(src=""+img, alt="ícono de "+t)
+ h2.-medium.m-component__title=t
+ p.m-component__text=p
 
 mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
  // Begin Mailchimp Signup Form
@@ -90,3 +96,24 @@ mixin typoUI(H1W,H1,H2W,H2,H3W,H3,mW,m,pW,p,smW,s,spW,sp)
   li: h3 Párrafo → #[b.-medium #{pW}] → #{p}px
   li: h3 Small → #[b.-medium #{smW}] → #{s}px
   li: h3 Span → #[b.-medium #{spW}] → #{sp}px
+
+//- Links a contenidos next up/related
+mixin relatedLink(no="",a="#", n="Vamos al link anterior")
+ div(class="m-relatedLink -flex "+no)
+  h3.m-relatedLink__title ← Anterior
+  ul.m-relatedLink__link
+   li: a(class="m-nextUpLink__element", href=""+a)
+    p=n
+
+mixin nextUpLink(no="", a="#", n="Vamos al link seguiente ahora!!")
+ div(class="m-nextUpLink -flex "+no)
+  h3.m-nextUpLink__title → Siguiente
+  ul.m-nextUpLink__link
+   li: a(class="m-nextUpLink__element", href=""+a)
+    p=n
+
+mixin breakpoints()
+ .m-text__alert
+  .a-text__alert #[span.-iconAlerts 💡]
+  .m-text__warning
+   p Para ver cuánto miden cada breakpoints ir a #[a.-colorAlert.-medium.-targetText(href=linksDev[0], target="_blank") medidas de breakpoints]

@@ -124,9 +124,7 @@ li {
 }
 .m-linksList {
     padding-left: 0;
-   /*  li {
-        margin-bottom: $spaceXs;
-    } */
+    position: relative;
     a {
         padding: 4px $spaceXs 4px $spaceXs;
         border-radius: 4px;
@@ -191,6 +189,10 @@ li {
 }
 .-center {
     text-align: center;
+}
+
+.-subtitle {
+    font-size: $font02;
 }
 
 // color

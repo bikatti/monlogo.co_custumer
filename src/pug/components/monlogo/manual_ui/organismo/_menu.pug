@@ -18,7 +18,7 @@ section.o-textManual.-bg.-padBgBottom
      .m-text__sectionHeaderText
       h3.a-text__title.-uppercase.-italic Nombre
     .m-text__div
-     p Este es el nombre que se le dará en el css y las clases para referirse al organismo (o bloque):
+     p Se refiere al nombre que se le dará en el css y a la clase con que identificaremos cada organismo (o bloque). Para este organismo será:
      .-row.a-noMargin
       .-col-12.-dFlex.-jCCenter
        .m-codeCss
@@ -28,10 +28,7 @@ section.o-textManual.-bg.-padBgBottom
     .m-text__sectionHeader
      .m-text__sectionHeaderText
       h3.a-text__title.-uppercase.-italic Descripción
-    .m-text__alert
-     .a-text__alert #[span.-iconAlerts 💡]
-     .m-text__warning
-      p Para ver cuanto miden cada breakpoints ir a #[a.-colorAlert.-medium(href=linksDev[0], target="_blank") medidas de breakpoints]
+    +breakpoints()
     .m-text__div
      h3.-uppercase.-italic Desktop (breakpoints Xl y Lg)
      .-row
@@ -57,11 +54,11 @@ section.o-textManual.-bg.-padBgBottom
      .m-text__sectionHeaderText
       h3.a-text__title.-uppercase.-italic Behavior
     .m-text__div
-     p Las animaciones de este organismo será:
+     p Las animaciones de este organismo serán:
      ul.m-listContent.-check.a-noPadding
-       li: p #[b.-regular.-colorAlert FadeInDown →] Esta animación será al inicio que carge la página.
-       li: p #[b.-regular.-colorAlert FadeIn →] Esta animación cuando el menú pase de background transparente a el color especificado.
+       li: p #[b.-regular.-colorAlert FadeInDown →] Esta animación será al inicio cuando cargue la página.
+       li: p #[b.-regular.-colorAlert FadeIn →] Esta animación ocurrirá cuando el menú pase de background transparente al color especificado.
     .m-text__alert
      .a-text__alert #[span.-iconAlerts 💡]
      .m-text__warning
-      p Puedes conseguir está animación en está página: #[a.-colorAlert.-medium(href="https://animate.style/", target="-blank") animate.style]
+      p Puedes conseguir esta animación en la siguiente página: #[a.-colorAlert.-medium.-targetText(href="https://animate.style/", target="-blank") animate.style]

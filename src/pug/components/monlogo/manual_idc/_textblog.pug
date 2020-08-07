@@ -15,13 +15,18 @@ section.o-textManual.-bg.-padBgBottom
 
   article.m-text__blog
    .m-text__section
+    .m-text__alert
+     .a-text__alert #[span.-iconAlerts 💡]
+     .m-text__warning
+      p Como ejemplo estamos mostrando el manual que reúne las instrucciones para la correcta aplicación y uso de la identidad gráfica de Monlogo.
     .m-textContent.-gridGapXs
      .m-columnOne
-      p.-padSmBottom Como ejemplo estamos mostrando el manual que reúne las instrucciones para la correcta aplicación y uso de la identidad gráfica de Monlogo. Su función es orientar a todas las personas responsables de interpretar, comunicar y aplicar la identidad gráfica de la empresa en los diferentes medios en que va ser aplicada.
-      p.-padSmBottom El correcto uso de la identidad gráfica contribuirá a tener consistencia en el mensaje que se quiere dar al cliente y logrará que la empresa sea identificada con rapidez.
+      p.-padSmBottom La función de este manual es orientar a todas las personas responsables de interpretar, comunicar y aplicar la identidad gráfica de la empresa en los diferentes medios en que va ser aplicada.
 
      .m-columnTwo
-      p Además de la presentación en formato de página web como la que se observa aquí, hacemos una versión de este manual en formato PDF como el que puedes visualizar o descargar para imprimir en este enlace #[a.-colorAlert.-medium(href="https://drive.google.com/file/d/1gHWz151I8sE6W2IOeFmgyZ0I6K4G2L2j/view?usp=sharing", target="_blank") Haz clic aquí]
+      p Además de la presentación en formato de página web como la que se observa aquí, hacemos una versión de este manual en formato PDF
+      ul.m-linksList.-mXsTop
+       li: a.-medium.-dFlex.-download(href=linksUrl[1]+"assets/download/manual_identidad_grafica.pdf", download="manual identidad grafica") 📕 #[b.-linksText Descargar PDF]
 
    .m-text__section
     .m-text__sectionHeader
@@ -67,7 +72,7 @@ section.o-textManual.-bg.-padBgBottom
       h3.-uppercase.-italic.-padXsBottom Tipografía del logotipo
       p La tipografía del logotipo es Ubutu. Aquí se encontrará sus diferentes versiones en Light, Regular, Medium y Bold.
       ul.m-linksList.-mXsTop
-       li: a.-medium.-dFlex(href=linkfont[0], target="_blank") 🅰 #[b.-linksText #{typoManual[0]}] #[div]
+       li: a.-medium.-dFlex.-target(href=linkfont[0], target="_blank") 🅰 #[b.-linksText #{typoManual[0]}]
       +TypoTextContainer("a-manualTypoFont__one -padSmTop", typoManual[0]+" "+Weight[2], "-thin")
       +TypoTextContainer("a-manualTypoFont__one", typoManual[0]+" "+Weight[3], "-regular")
       +TypoTextContainer("a-manualTypoFont__one", typoManual[0]+" "+Weight[4], "-medium")
@@ -76,7 +81,7 @@ section.o-textManual.-bg.-padBgBottom
       h3.-uppercase.-italic.-padXsBottom Tipografía secundaria
       p La tipografía complementaria es Hind. Esta es la que se aplica en los textos que acompañan al logotipo, en la página web y otros medios.
       ul.m-linksList.-mXsTop
-       li: a.-medium.-dFlex(href=linkfont[1], target="_blank") 🅰 #[b.-linksText #{typoManual[1]}]
+       li: a.-medium.-dFlex.-target(href=linkfont[1], target="_blank") 🅰 #[b.-linksText #{typoManual[1]}]
       +TypoTextContainer("a-manualTypoFont__two -padSmTop", typoManual[1]+" "+Weight[2], "-thin")
       +TypoTextContainer("a-manualTypoFont__two", typoManual[1]+" "+Weight[3], "-regular")
       +TypoTextContainer("a-manualTypoFont__two", typoManual[1]+" "+Weight[4], "-medium")
@@ -147,3 +152,7 @@ section.o-textManual.-bg.-padBgBottom
 
      .m-columnTwo
       +ImgTextContainer("-mSmTop ", "-m-w75 -mAuto","Perfil de instagram", "", "assets/img/manual_monlogo/mockup_instagram.png")
+
+   .o-nextLink
+    +relatedLink("", linksUrl[1]+linksInternos[1]+"#packOne", "📄 Paquetes de Identidad Gráfica")
+    +nextUpLink("-hide", "", "")

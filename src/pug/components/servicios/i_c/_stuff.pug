@@ -1,8 +1,30 @@
-section.o-componentsService.-bg.-padMdTopBottom
- .m-componentsService.-ContainerUniversal
-  h2.a-textAndImg__title.a-component__text Diferentes aplicaciones de logotipo
-  .m-components
-   +component("assets/img/index/prointelecto_witness.png", "Perfil de instagram")
-   +component("assets/img/index/prointelecto_witness.png", "Página web")
-   +component("assets/img/index/prointelecto_witness.png", "Pestaña de navegar")
-   +component("assets/img/index/prointelecto_witness.png", "Impreso")
+section.o-components.-bgCalm.-padBgBottom.-padSmTop
+ .m-underline.-curve.-shapeTop
+  svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 3000 185.4")
+   path(fill="currentColor",d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z")
+ 
+ .m-content__title.-ContainerUniversal.-mXsBottom.-padMdTop
+  h2.a-textAndImg__title Conoce los formatos que entregamos
+  h3.a-categoriestitle__text Al finalizar el servicio te entregaremos lo siguiente:
+ .m-components__content.-mSmTop.-padXsTop.-ContainerUniversal
+  .m-component.-one.-borderNone.-fadeInUp
+   +card__thing(linksUrl[1]+"assets/img/icons/web_stuff_7.svg","Logotipo","Te entregamos tu logotipo en estos formatos:")
+   ol.m-pack__list.m-listContent.-check.-padSmTop.a-noMargin
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted PNG] formato gráfico comprimido que permite almacenar imágenes con una mayor profundidad de contraste.
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted SVG] formato gráficos vectoriales bidimensionales ideales para su uso en Internet.
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted JPG] archivo en formato de imagen para aplicación web (72 dpi).
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted AI] archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.
+
+  .m-component.-two.-borderNone.-fadeInUp
+   +card__thing(linksUrl[1]+"assets/img/icons/web_stuff_8.svg","Manual de identidad","Se podrá acceder al Manual de Identidad Gráfica en los formatos de:")
+   ol.m-pack__list.m-listContent.-check.-padSmTop.a-noMargin
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted Página web] hospedada en el área del cliente en el sitio web de Monlogo, en donde estarán las instrucciones para el uso correcto de los signos y elementos gráficos distintivos de la empresa.
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted PDF] archivo imprimible en cualquier tamaño y material.
+
+  .m-component.-three.-borderNone.-fadeInUp
+   +card__thing(linksUrl[1]+"assets/img/icons/web_stuff_9.svg","Recursos gráficos","Entregamos los recursos gráficos, entre ellos: los banners, fondos creados y elementos acompañantes de la identidad gráfica en los siguientes formatos:")
+   ol.m-pack__list.m-listContent.-check.-padSmTop.a-noMargin
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted PNG] formato gráfico comprimido que permite almacenar imágenes con una mayor profundidad de contraste.
+    li.a-packItemList #[b.-colorPrimary.-medium.-dotted JPG] archivo en formato de imagen para aplicación web (72 dpi).
+
+

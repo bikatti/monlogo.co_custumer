@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /assets/img/logo/
+Allow: /assets/img/banner/
+Disallow: /assets/
+Disallow: /clientes/
+Disallow: /monlogo/

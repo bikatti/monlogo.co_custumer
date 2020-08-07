@@ -1,7 +1,6 @@
 .o-categories {
     position: relative;
     @include mediaQueriesMd {
-        padding-top: $spaceSm;
         padding-bottom: $spaceBg;
     }
 }

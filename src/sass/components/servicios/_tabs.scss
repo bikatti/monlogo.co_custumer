@@ -1,0 +1,119 @@
+.o-tabs {
+    @include mediaQueriesSm {
+        padding-top: 0 !important;
+    }
+}
+.m-tabs__content {
+    position: relative;
+}
+.m-tabs__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: $spaceSm;
+    justify-content: space-evenly;
+    padding: 0 $spaceRg;
+    @include mediaQueriesSm {
+        justify-content: flex-start;
+        padding: 0;
+    }
+}
+
+.m-tabs__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    padding: $spaceXs;
+    min-width: 0;
+    font-size: $fontSM3;
+    letter-spacing: .5px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 4px;
+    padding-top: $spaceXs;
+    transition: background 120ms ease-in 0s;
+    &:focus, &:hover {
+        color: $color-secondary;
+        background: $color-lightgrey;
+    }
+    .-icon {
+        margin-right: $spaceXs;
+        width: $spaceRg;
+    }
+    &.-isActive {
+        color: $color-secondary;
+        font-weight: 500;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 45%;
+            bottom: -$spaceSm;
+            width: 0;
+            height: 0;
+            z-index: 1;
+            border-color: transparent transparent $color-lightin;
+            border-style: solid;
+            border-width: 0 $spaceSm $spaceSm;
+        }
+    }
+    @include mediaQueriesSm {
+        margin-bottom: $spaceXs;
+        width: 100%;
+        font-size: $fontS3;
+        &.-isActive {
+            background: $color-lightgrey;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.m-tabs__container {
+    padding: 30px calc(1.5 * #{$spaceRg});
+    min-height: 224px;
+    position: relative;
+    background-color: $color-lightin;
+    border-radius: 8px;
+    box-shadow: 0 $spaceXs $spaceRg 0 $color-calm;
+    @include mediaQueriesMd {
+        max-width: 100%;
+    }
+    @include mediaQueriesSm {
+        padding: $spaceRg;
+        min-height: 384px;
+    }
+}
+
+.m-tabs__img {
+    position: absolute;
+    bottom: -48%;
+    right: auto;
+    left: 0;
+    @include mediaQueriesLg {
+        bottom: -16%;
+    }
+    @include mediaQueriesSm {
+        position: relative;
+        bottom: auto;
+        margin-bottom: $spaceRg;
+    }
+}
+.a-tabs__img {
+    width: 100%;
+}
+
+.m-tabs__topic {
+    &:not(:target):not(.-isActive) {
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap;
+    }
+}

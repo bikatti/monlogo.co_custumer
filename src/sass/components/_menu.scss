@@ -157,9 +157,8 @@
     }
     @include mediaQueriesMd {
         height: auto;
-        max-width: 80%;
+        max-width: 100%;
         margin-left: $spaceSm;
-        margin-right: auto;
         padding-top: 0;
         padding-left: 0;
         margin-top: $spaceSm;
@@ -172,12 +171,30 @@
             padding-top: $spaceSm;
             padding-left: $spaceXs;
             padding-right: 0;
+            padding-bottom: 0;
         }
         li ul {
+            padding: 0 $spaceXs;
+            display: block;
             top: 40px;
+        }
+        ul li {
+            padding-bottom: 0;
         }
         h3 {
             margin-bottom: $spaceXs;
+        }
+        .m-dropdownMenu__item {
+            &::after {
+                content: '';
+                display: block;
+                width: calc(95vw - #{$spaceRg});
+                border-bottom: 1px dotted $color-grey;
+                // background-color: $color-primary;
+            }
+        }
+        & li:hover li, & li:focus li {
+            padding-left: $spaceXs;
         }
     }
 }

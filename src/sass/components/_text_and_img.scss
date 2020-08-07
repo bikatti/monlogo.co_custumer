@@ -24,13 +24,13 @@
     &Right {
         display: grid;
         grid-template-columns: 56% auto;
-        grid-gap: 0 $spaceXs;
+        grid-gap: 0 $spaceSm;
         grid-template-areas: "problemImg problemContent";
     }
     &Left {
         display: grid;
-        grid-template-columns: 53% auto;
-        grid-gap: 0 $spaceXs;
+        grid-template-columns: 52% auto;
+        grid-gap: 0 $spaceSm;
         grid-template-areas: "explainContent explainImg";
     }
     @include mediaQueriesLg {
@@ -198,10 +198,18 @@
         color: $color-lightgrey;
     }
     p {
-        padding-bottom: 10px;
+        padding-bottom: $spaceSm;
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
     @include mediaQueriesLg {
         padding-top: $spaceSm;
+    }
+    @include mediaQueriesSm {
+        p:last-child {
+            padding-bottom: $spaceSm;
+        }
     }
 }
 
