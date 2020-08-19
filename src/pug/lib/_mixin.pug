@@ -117,3 +117,16 @@ mixin breakpoints()
   .a-text__alert #[span.-iconAlerts 💡]
   .m-text__warning
    p Para ver cuánto miden cada breakpoints ir a #[a.-colorAlert.-medium.-targetText(href=linksDev[0], target="_blank") medidas de breakpoints]
+
+mixin metadataCourse(t,d,url,type,img,imgAlt)
+ meta(name="og:title", content=""+t)
+ meta(name="og:description", content=""+d)
+ meta(name="og:url", content=""+url)
+ meta(name="og:type", content=""+type)
+ meta(name="og:image", content=""+img)
+ meta(name="og:image:alt", content=""+imgAlt)
+ meta(name="og:image:type", content="image/png")
+ meta(name="og:image:secure_url", content=""+img)
+ meta(name="title", content=""+t)
+ meta(name="description", content=""+d)
+ title=t

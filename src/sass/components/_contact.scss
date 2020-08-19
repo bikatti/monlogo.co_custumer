@@ -13,8 +13,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    h1, h2, h3 {
+    span, h2, h3 {
         color: $color-lightin;
+    }
+    span {
+        font-family: $font1;
+        font-size: $fontS5;
+        font-weight: bold;
+        @include mediaQueriesMd {
+            font-size: $fontSM4;
+        }
+        @include mediaQueries0 {
+            font-size: $font03;
+        }
     }
 }
 

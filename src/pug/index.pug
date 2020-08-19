@@ -3,13 +3,10 @@ include lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include base/_head.pug
-  meta(name="og:url", content="https://monlogo.co")
-  meta(name="title", content=titles[0])
-  meta(name="description", content="Llevamos tu negocio al mundo digital, en un mundo cada vez más tecnológico, hacemos la transformación digital de tu negocio aumentando su exposición a nivel mundial las 24 horas/todos los días del año.")
-  
   link(rel="stylesheet", href=linksUrl[1]+"assets/css/style.css")
-  
-  title #{titles[0]} - Para que tu negocio exista hoy debe recibir una transformación digital
+  +metadataCourse(titles[0]+" - Para existir hoy debes tener una transformación digital","Comienza tu transformación digital desde cero para tener una presencia solidad en la web. Contrata una identidad gráfica o diseño de páginas web ya!","https://monlogo.co/","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
+  meta(name="googlebot-news", content="nosnippet")
+
  body.o-colorIndex
   // header
   include base/_header.pug

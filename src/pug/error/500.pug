@@ -4,7 +4,7 @@ include ../lib/_mixin.pug
 html(lang="es")
  include ../base/_head.pug
   link(rel="stylesheet", href=linksUrl[1]+"assets/css/dashboard.css")
-  +metadataCourse("Pantallas | "+titles[0],"Ejemplo de creación de pantallas para el diseño de páginas web","https://monlogo.co/monlogo/landing","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
+  +metadataCourse("Servidor no responde","El servidor tiene un problema interno","https://monlogo.co/","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
   meta(name="googlebot-news", content="nosnippet")
   meta(name="googlebot", content="noindex")
 
@@ -12,8 +12,9 @@ html(lang="es")
   // header
   include ../base/_header.pug
 
-  // text
-  include ../components/monlogo/landing/_textblog.pug
+  // Hero & text
+   include ../components/monlogo/manual_ui/organismo/_contact-faq.pug
+  h3 500
 
   // footer
   include ../base/_footer_notion.pug

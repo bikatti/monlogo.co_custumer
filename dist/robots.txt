@@ -1,7 +1,4 @@
+Sitemap: https://monlogo.co/sitemap.xml
 User-agent: *
-
-Allow: /assets/img/logo/
-Allow: /assets/img/banner/
-Disallow: /assets/
-Disallow: /clientes/
-Disallow: /monlogo/
+Allow: /
+Disallow: /error/
