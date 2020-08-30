@@ -101,6 +101,7 @@
             padding-left: 0;
             &::before {
                 top: -$spaceMd;
+                left: -$spaceXs;
             }
         }
         &.-padTop {

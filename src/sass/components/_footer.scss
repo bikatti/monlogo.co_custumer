@@ -156,6 +156,10 @@
         font-weight: 600;
     }
     display: flex;
+    max-width: 100%;
+    @include mediaQueriesLg {
+        flex-wrap: wrap;
+    }
 }
 
 .a-mailchimpGroup {
@@ -186,6 +190,7 @@
         margin-right: $spaceSm;
     }
     @include mediaQueriesSm {
+        flex-wrap: wrap;
         p {
             margin-right: 5px;
         }

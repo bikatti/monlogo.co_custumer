@@ -3,18 +3,27 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head.pug
-  link(rel="stylesheet", href=linksUrl[1]+"assets/css/dashboard.css")
+  include ../base/_headdash.pug
   +metadataCourse("404 Error!","Página no encontrada","https://monlogo.co/","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
   meta(name="googlebot-news", content="nosnippet")
   meta(name="googlebot", content="noindex")
 
- body.o-colorIndex
+ body.o-colorIndex.-error
   // header
   include ../base/_header.pug
 
   // Hero & text
-   include ../components/monlogo/manual_ui/organismo/_contact-faq.pug
-  h3 404
+  section.o-hero.-ContainerUniversal
+   .m-heroContent.-error.-mRgTop.-bigger
+    .m-heroContent__img
+     .-img
+      .m-heroContent__imgContainer
+       img(src="https://static.platzi.com/static/images/error/img404.png", alt="Ilustración de error 404")
+    .m-heroContent__text.-mSmTop
+     .a-heroContent__title
+      h1.-colorPrimary Rayos!
+     .a-heroContent__text
+      h2.-light.-subtitle No encontramos lo que estabas buscando.
 
   // footer
-  include ../base/_footer_notion.pug
+  include ../base/_js.pug

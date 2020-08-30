@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://monlogo.co/</loc>
+	<lastmod>2020-08-20T20:51:29+01:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/servicios/identidad-grafica</loc>
+	<lastmod>2020-08-20T20:51:30+01:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/servicios/diseno-paginas-web</loc>
+	<lastmod>2020-08-20T20:51:33+01:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/servicios/programacion-web</loc>
+	<lastmod>2020-08-20T20:51:33+01:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/manual-de-identidad-grafica</loc>
+	<lastmod>2020-08-20T20:51:33+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/manual-diseno-ui</loc>
+	<lastmod>2020-08-20T20:51:33+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/landing</loc>
+	<lastmod>2020-08-20T20:51:33+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/assets/download/manual_identidad_grafica.pdf</loc>
+	<lastmod>2020-08-20T20:51:34+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/foundation-y-var</loc>
+	<lastmod>2020-08-20T20:51:37+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/component</loc>
+	<lastmod>2020-08-20T20:51:36+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/atomos/buttons</loc>
+	<lastmod>2020-08-20T20:51:36+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/atomos/texts</loc>
+	<lastmod>2020-08-20T20:51:36+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/moleculas/cards</loc>
+	<lastmod>2020-08-20T20:51:36+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/moleculas/texts-img-lr</loc>
+	<lastmod>2020-08-20T20:51:37+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/moleculas/texts-img-rl</loc>
+	<lastmod>2020-08-20T20:51:39+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/menu</loc>
+	<lastmod>2020-08-20T20:51:37+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/servicios</loc>
+	<lastmod>2020-08-20T20:51:37+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/hero-index</loc>
+	<lastmod>2020-08-20T20:51:37+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/about-us</loc>
+	<lastmod>2020-08-20T20:51:37+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/footer</loc>
+	<lastmod>2020-08-20T20:51:38+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/witness</loc>
+	<lastmod>2020-08-20T20:51:38+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/info-work</loc>
+	<lastmod>2020-08-20T20:51:38+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/organismos/contact-faq</loc>
+	<lastmod>2020-08-20T20:51:38+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://monlogo.co/monlogo/dev/breakpoints</loc>
+	<lastmod>2020-08-20T20:51:38+01:00</lastmod>
+	<changefreq>never</changefreq>
+	<priority>0.4</priority>
+</url>
+</urlset>

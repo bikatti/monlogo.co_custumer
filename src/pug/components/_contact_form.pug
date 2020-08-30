@@ -1,0 +1,21 @@
+section.o-formContact.-padRgTopBottom
+ .m-formContact__content.-ContainerUniversal
+  .a-burguerOut#burgerOutModal
+   img.a-burguerOut__menu(src=linksUrl[1]+"assets/img/icons/close.svg", alt="Icono de cierre del menu")
+  form.m-form(action=linksUrl[1]+"assets/php/info.php", method="POST")
+   .m-formContact
+    h2.-h1.-colorPrimary Cómo te podemos ayudar
+    .m-form__group
+     input(type="text", name="nombre", id="", required)
+     span.m-form__line
+     label Nombre
+    .m-form__group
+     input(type="email", name="email", id="", required)
+     span.m-form__line
+     label Email
+    .m-form__group
+     textarea(name="mensaje", id="", rows="3", required)
+     span.m-form__line
+     label Cuéntanos sobre tu proyecto
+    .a-button
+     button.a-btn.-btnPrimary(type="submit") Enviar

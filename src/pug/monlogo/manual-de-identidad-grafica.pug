@@ -7,7 +7,7 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head.pug
-  link(rel="stylesheet", href=linksUrl[1]+"assets/css/dashboard.css")
+  include ../base/_headdash.pug
   +metadataCourse("Manual de la "+services[0]+" | "+titles[0],"Ejemplo de manual de identidad gráfica de Monlogo","https://monlogo.co/monlogo/manual-de-identidad-grafica","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
   meta(name="googlebot-news", content="nosnippet")
   link(href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap", rel="stylesheet")
@@ -21,6 +21,13 @@ html(lang="es")
 
   // text
   include ../components/monlogo/manual_idc/_textblog.pug
+
+  // contact form
+  .o-contactModal
+   .m-modalDialog
+    .m-modal__content.-fadeInUp
+     include ../components/_contact_form.pug
+  .-blur#contact2
 
   // footer
   include ../base/_footer_notion.pug

@@ -63,6 +63,16 @@ ol {
     margin-bottom: $fontSM2;
 }
 
+.-error {
+    background-color: $color-calm;
+}
+.-isActive {
+    display: block !important;
+}
+.-pointer {
+    cursor: pointer;
+}
+
 ::selection {
     background-color: $color-primary;
     color: $color-lightin;

@@ -3,8 +3,8 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head.pug
-  link(rel="stylesheet", href=linksUrl[1]+"assets/css/all.css")
-  +metadataCourse(services[2]+" | "+titles[0],"Programamos el diseño de tu página web en PSD a Código de manera profesional. Nuna fue tan fácil estár en la web","https://monlogo.co/servicios/programacion-web","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
+  include ../base/_headall.pug
+  +metadataCourse(services[2]+" | "+titles[0],"En Monlogo programamos el diseño de tu página web en PSD a Código de manera profesional. Nuna fue tan fácil estár en la web","https://monlogo.co/servicios/programacion-web","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
   meta(name="googlebot-news", content="nosnippet")
 
  body.o-colorIndex
@@ -31,6 +31,13 @@ html(lang="es")
 
   // contact and faq
   include ../components/_contact_faq.pug
+
+  // contact form
+  .o-contactModal
+   .m-modalDialog
+    .m-modal__content.-fadeInUp
+     include ../components/_contact_form.pug
+  .-blur
 
   // footer
   include ../base/_footer.pug

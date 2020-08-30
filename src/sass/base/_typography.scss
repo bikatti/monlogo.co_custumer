@@ -1,11 +1,11 @@
-h1, h2, h3, p, small, i, span, ol, li, ul, a, input {
+h1, h2, h3, p, small, i, label, span, ol, li, ul, a, input {
     font-family: $font1;
     color: $color-darkgrey;
     line-height: 1.35;
 }
 
 // Titles
-h1 {
+h1, .-h1 {
     font-family: $font1;
     font-size: $fontS5;
     font-weight: bold;
@@ -42,7 +42,7 @@ h3 {
 }
 
 // Paragraph
-p, i, ol, li {
+p, i, ol, li, label {
     font-size: $fontS2;
     font-weight: normal;
     @include mediaQueriesLg {

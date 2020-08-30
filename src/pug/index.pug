@@ -3,8 +3,8 @@ include lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include base/_head.pug
-  link(rel="stylesheet", href=linksUrl[1]+"assets/css/style.css")
-  +metadataCourse(titles[0]+" - Para existir hoy debes tener una transformación digital","Comienza tu transformación digital desde cero para tener una presencia solidad en la web. Contrata una identidad gráfica o diseño de páginas web ya!","https://monlogo.co/","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
+  include base/_headstyle.pug
+  +metadataCourse(titles[0]+" - Inicia tu transformación digital","Con Monlogo comienza tu transformación digital desde cero para tener una presencia solidad en la web. Contrata una identidad gráfica o diseño de páginas web ya!","https://monlogo.co/","website","https://monlogo.co/assets/img/banner/banner.png","Logo de Monlogo con fondo azul rodeado de elementos gráficos del website")
   meta(name="googlebot-news", content="nosnippet")
 
  body.o-colorIndex
@@ -29,5 +29,12 @@ html(lang="es")
   // contact and faq
   include components/_contact_faq.pug
 
+  // contact form
+  .o-contactModal
+   .m-modalDialog
+    .m-modal__content.-fadeInUp
+     include components/_contact_form.pug
+  .-blur
+ 
   // footer
   include base/_footer.pug

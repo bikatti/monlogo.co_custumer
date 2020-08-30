@@ -16,17 +16,6 @@
     span, h2, h3 {
         color: $color-lightin;
     }
-    span {
-        font-family: $font1;
-        font-size: $fontS5;
-        font-weight: bold;
-        @include mediaQueriesMd {
-            font-size: $fontSM4;
-        }
-        @include mediaQueries0 {
-            font-size: $font03;
-        }
-    }
 }
 
 .m-contactAndFaq__content {
@@ -68,6 +57,9 @@
             width: $spaceBg;
             left: -$spaceXs;
         }
+    }
+    @include mediaQueries0 {
+        flex-wrap: wrap;
     }
 }
 
@@ -124,5 +116,73 @@
             right: -190px;
             bottom: -160px;
         }
+    }
+}
+
+.o-formContact {
+    position: relative;
+    overflow: hidden;
+    max-height: inherit;
+}
+.m-formContact__content {
+    .a-burguerOut {
+        position: absolute;
+        right: $spaceSm;
+        top: $spaceXs;
+    }
+}
+.m-formContact {
+    width: 100%;
+    margin: auto;
+}
+.m-form__group {
+    position: relative;
+    margin: $spaceRg 0 $spaceRg 0;
+    input, textarea {
+        background: none;
+        color: $color-darkgrey;
+        font-size: $fontS3;
+        padding: $spaceSm $spaceXs $spaceXs calc(#{$spaceXs} / 2);
+        display: block;
+        width: 100%;
+        border:none;
+        border-bottom: 1px solid $color-darkengrey;
+        resize: none;
+    }
+    input:focus, textarea:focus {
+        outline: none;
+    }
+    label {
+        font-size: $fontS3;
+        position: absolute;
+        left: 5px;
+        top:10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
+    input:focus~label, input:valid~label, 
+    textarea:focus~label, textarea:valid~label {
+        position: absolute;
+        top: -$fontS3;
+        font-size: $fontS2;
+        color: $color-secondary;
+    }
+    .m-form__line {
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before {
+            content: '';
+            height: 2px;
+            width: 0%;
+            bottom: 0;
+            position: absolute;
+            background: linear-gradient(to right, $color-primary, $color-alert);
+            transition: 0.3s ease all;
+            left: 0%;
+        }
+    }
+    input:focus~.m-form__line::before, textarea:focus~.m-form__line::before {
+        width: 100%;
     }
 }
