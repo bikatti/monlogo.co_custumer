@@ -182,15 +182,12 @@
 
 // Firm Dev
 .m-footerFirmDev {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-bottom: $spaceSm;
     p {
+        text-align: center;
         margin-right: $spaceXs;
     }
     @include mediaQueriesSm {
-        flex-wrap: wrap;
         p {
             margin-right: 5px;
         }
